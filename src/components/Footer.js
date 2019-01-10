@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default () => (
-    <footer className="footer">
-        COPYRIGHT 2018.aleku399 . ALL RIGHTS RESERVED
-    </footer>
+const Footer =  () => (
+<div style={{padding: '20px'}}>
+    <p> COPYRIGHT {new Date().getFullYear()}.aleku399 . ALL RIGHTS RESERVED</p>
+</div>
 )
+
+export default Footer

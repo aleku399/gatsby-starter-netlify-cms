@@ -5,26 +5,34 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
+import betty from "../img/about.jpeg"
 
 export const AboutPageTemplate = ({ title, content, contentComponent, img, heading }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <h3>{heading}</h3>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
+  <div className="alex">
+    <article className="media">
+    <div className="columns">
+    <div className="column">
+    <div className="media-content">
+        <div className="content">
+          <h3 className="title is-size-3 has-text-weight-bold is-bold-light">
+            {title}
+          </h3>
+          <h6>{heading}</h6>
+          <PageContent className="content" content={content} />
         </div>
       </div>
-    </section>
+    </div>
+    <div className="column">
+      <figure className="media-right">
+          <img src={betty} alt={betty} width={400}/>
+      </figure>
+    </div>
+    </div>
+    </article>
+  </div>
   )
 }
 

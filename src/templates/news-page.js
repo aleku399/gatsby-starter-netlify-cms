@@ -8,18 +8,14 @@ export const NewsPageTemplate = ({ title, content, contentComponent, heading }) 
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light alex">
-                {title}
-              </h2>
-              <h3 className="subtitle">{heading}</h3>
-              <PageContent className="container" content={content} />
-            </div>
+    <section className="alex">
+      <div>
+          <h4 className="line">{title}</h4>
+        <div>
+          <div className="trial">
+            <strong>{heading}</strong>
           </div>
+          <PageContent className="container link" content={content} />
         </div>
       </div>
     </section>

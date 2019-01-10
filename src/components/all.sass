@@ -1,14 +1,21 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/functions"
+@import "~bulma/sass/utilities/derived-variables.sass"
+@import "./css/about.css"
+@import "./css/line.css"
+@import "./css/blog.css"
+@import "./css/gallery.scss"
 
 // Config vars
 // Kalidi logo brand color: #FD461E
 $kaldi-red: #D64000
-$kaldi-red-invert: #fff
-$footer-background-color: white
-
+$kaldi-red-invert: #fff 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
+$navbar-breakpoint: $tablet !default
+$navbar-item-hover-color: black
+
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -48,13 +55,22 @@ $body-color: #333
 
 @import "~bulma"
 
-.alex
-  color: red
-
-.container
+.body
   font-family: 'Roboto Mono', Helvetica, Arial, sans-serif
   line-height: 24px
   font-size: 13px
   font-weight: 300
   color: #987F28
   letter-spacing: 1px
+
+.bg
+ // background: url('../img/talk.jpg')
+ background-size: cover
+ background-repeat: no-repeat
+ background-position: center
+ height: 50vh
+// .gatsby-resp-image-wrapper 
+//   margin-left: 0 !important
+//   margin-right: 0 !important
+
+
