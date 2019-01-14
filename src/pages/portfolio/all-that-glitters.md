@@ -3,7 +3,7 @@ templateKey: 'all-that-glitters'
 path: /all-that-glitters
 title: ABOUT PROJECT
 author:  BETTINAHTIANAH
-image: /img/green.jpg
+image: /img/j9.jpg
 ---
 
 >Talk about washing off glitter

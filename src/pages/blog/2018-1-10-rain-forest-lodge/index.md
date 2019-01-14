@@ -3,6 +3,7 @@ templateKey: blog-post
 title: RAIN FOREST LODGE
 description: RAIN FOREST LODGE
 date: 2018-1-10T10:34:10.000Z
+image: /img/gliter.jpeg
 tags:
   - UNCATEGORIZED
   - POST

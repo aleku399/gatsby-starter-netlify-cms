@@ -3,6 +3,7 @@ templateKey: blog-post
 title: TROPHY TOUR
 description: TROPHY TOUR
 date: 2018-1-10T20:20:25.000Z
+image: /img/t14.jpg
 tags:
   - UNCATEGORIZED
   - POST

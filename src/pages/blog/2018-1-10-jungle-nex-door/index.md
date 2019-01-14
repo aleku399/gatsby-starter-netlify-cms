@@ -3,6 +3,7 @@ templateKey: blog-post
 title: JUNGLE NEXT DOOR
 description: THE KIPLING LODGE
 date: 2018-1-10T20:15:10.000Z
+image: /img/gliter.jpeg
 tags:
   - UNCATEGORIZED
   - POST
