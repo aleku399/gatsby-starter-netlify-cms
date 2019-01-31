@@ -38,14 +38,21 @@ const BlogWrapper = ({ children, img }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <section className=" hero is-light  is-fullheight-with-navbar">
-              <div className="bg" style={{ backgroundImage: `url(${img})` }}>alex</div>
-              <div className="hero-body ">
-                <div className='container '>
-                 {children}
-                </div>
-              </div>
-        </section>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="bg" style={{ backgroundImage: `url(${
+            !!img.childImageSharp
+            ? img.childImageSharp.fluid.src
+            : img
+          })` }}>alex</div>
+          <div
+          style={{
+            marginLeft: "40px",
+            marginRight: "40px"
+          }}
+          >
+            {children}
+          </div>
+        </div>
         <Footer />
       </div>
     )}

@@ -28,73 +28,81 @@ export const JulyPhotoShootPageTemplate = ({
 
   return (
   <div className="allan">
-    <article className="media">
-    <div className="columns">
-      <div className="column">
-        <div className="media-content">
-            <div className="content">
-              <h3 className="">
-                {title}
-              </h3>
-              <h6>{author}</h6>
-              <PageContent className="content" content={content} />
-            </div>
-        </div>
-      </div>
-      <div className="column">
-        {/* <PreviewCompatibleImage imageInfo={img} /> */}
-        <div className="container">
-            <div className="gallery">
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img1} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img2} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img3} />
-              </div>
-            </div>
-            <div className="gallery">
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img4} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img5} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img6} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img7} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img8} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img9} />
-              </div>
-            </div>
-            <div className="gallery">
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img10} />
-              </div>
-              <div className="item">
-                <PreviewCompatibleImage imageInfo={img11} />
+    <div className="row">
+          <div className="col-2">
+            <div className="media-content">
+              <div className="content">
+                <h3 className="">
+                  {title}
+                </h3>
+                <h6>{author}</h6>
+                <PageContent className="content" content={content} />
               </div>
             </div>
           </div>
+          <div className="col-10 container">
+        {/* <PreviewCompatibleImage imageInfo={img} /> */}
+            <div style={{border: "1px solid black"}}>  
+              <div className="row">
+                <div className="col-lg-4 col-sm-6">
+                  <div>
+                      <PreviewCompatibleImage  imageInfo={img1} /> 
+                  </div>
+                </div>
+                <div className="col-lg-4 col-sm-6">
+                  <div>
+                      <PreviewCompatibleImage  imageInfo={img2} />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-sm-6">
+                  <div>
+                      <PreviewCompatibleImage  imageInfo={img3} />
+                  </div>
+                </div>
+              </div>  
+              <div className="row mt-5">
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                        <PreviewCompatibleImage  imageInfo={img4} /> 
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                        <PreviewCompatibleImage  imageInfo={img5} />
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                        <PreviewCompatibleImage  imageInfo={img6} />
+                    </div>
+              </div>
+              {/* <div className="row mt-5">
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                      <PreviewCompatibleImage  imageInfo={img7} /> 
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                      <PreviewCompatibleImage  imageInfo={img8} />
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-sm-6">
+                    <div>
+                      <PreviewCompatibleImage  imageInfo={img9} />
+                    </div>
+              </div> */}
+            </div>
+          </div>  
       </div>
     </div>
-    </article>
   </div>
   )
 }
 
 JulyPhotoShootPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  author: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  author: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -103,7 +111,7 @@ const  JulyPhotoShootPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={betty}>
+    <BlogWrapper img={post.frontmatter.image4}>
       < JulyPhotoShootPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -140,21 +148,21 @@ export const julyPhotoShootPageQuery = graphql`
         author
         image1 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxHeight: 1500, maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         image2 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxHeight: 1500, maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         image3 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxHeight: 1500, maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -168,7 +176,7 @@ export const julyPhotoShootPageQuery = graphql`
         }
         image5 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxHeight: 1400, maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

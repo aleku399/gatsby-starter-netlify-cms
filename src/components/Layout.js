@@ -40,15 +40,21 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
-        <section className=" hero is-light  is-fullheight-with-navbar">
-              <div className="hero-body ">
-                <div className='container has-centered'>
-                 {children}
-                </div>
-              </div>
-        </section>
-        <Footer/>
+        <header>
+          <Navbar />
+        </header>
+        <main role="main">
+          <div className="jumbotron">
+            <div style={{
+              marginTop: "60px",
+              marginLeft: "40px",
+              marginRight: "40px"
+            }}>
+              {children}
+            </div>
+          </div>
+          <Footer/>
+        </main>
       </div>
     )}
   />

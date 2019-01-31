@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import BlogWrapper from '../components/Wrapper'
 import Content, { HTMLContent } from '../components/Content'
-import Portfolio from '../components/portfolio'
-import betty from "../img/glam1.jpeg"
+import Page from '../components/portfolio/page'
+import betty from "../img/b2.jpg"
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const PortfolioPageTemplate = ({
+export const PagePageTemplate = ({
     all,
     creative,
     fashion,
@@ -17,12 +17,13 @@ export const PortfolioPageTemplate = ({
   
   return (
   <div  className="allan">
-    <Portfolio />
+    alex
+    <Page />
   </div>
   )
 }
 
-PortfolioPageTemplate.propTypes = {
+PagePageTemplate.propTypes = {
   all: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   author: PropTypes.string,
@@ -30,12 +31,12 @@ PortfolioPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const PortfolioPage = ({ data }) => {
+const PagePage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
     <BlogWrapper img={betty}>
-      <PortfolioPageTemplate
+      <PagePageTemplate
         all={post.frontmatter.all}
         creative={post.frontmatter.creative}
         fashion={post.frontmatter.fashion}
@@ -47,14 +48,14 @@ const PortfolioPage = ({ data }) => {
   )
 }
 
-PortfolioPage.propTypes = {
+PagePage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default PortfolioPage
+export default PagePage
 
-export const PortfolioPageQuery = graphql`
-  query PortfolioPage($id: String!) {
+export const PagePageQuery = graphql`
+  query PagePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         all

@@ -10,12 +10,12 @@ export const NewsPageTemplate = ({ title, content, contentComponent, heading }) 
   return (
     <section className="alex">
       <div>
-          <h4 className="line">{title}</h4>
+          <h5 className="line">{title}</h5>
         <div>
           <div className="trial">
             <strong>{heading}</strong>
           </div>
-          <PageContent className="container link" content={content} />
+          <PageContent  content={content} />
         </div>
       </div>
     </section>

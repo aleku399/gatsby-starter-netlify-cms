@@ -9,25 +9,21 @@ import betty from "../img/talk.jpg"
 export const ContactPageTemplate = ({ description,  heading, mail, address }) => {
   return (
   <div className="alex">
-      <nav className="level">
-        <div className="level-left">
-          <div className="level-item">
-            <div>
-              <p><FaHome/> {address}</p>
-              <a href="/mailto:bettinahtianah19@gmail.com">
-                {mail}
-              </a>
-            </div>
-          </div>
+      <div className="row">
+        <div className="col-md-4">
+          <p><FaHome/> {address}</p>
+          <a href="/mailto:bettinahtianah19@gmail.com">
+              {mail}
+           </a>
         </div>
-        <div className="level-item has-text-centered">
-        <p>{heading}</p>
+        <div  className="col-md-8">
+          <p>{heading}</p>
         </div>
-      </nav>
-      <div className="k s">
-        <div className="container has-text-centered">
+      </div>
+      <div style={{ marginTop: "20px"}} className="container text-center">
+        <div className="container">
           <p>{description}</p>
-          <img className="h" src={betty} alt="betty"/>
+          <img style={{border: "6px solid whiteSmoke"}}  src={betty} alt="betty"/>
         </div>
       </div>
   </div>

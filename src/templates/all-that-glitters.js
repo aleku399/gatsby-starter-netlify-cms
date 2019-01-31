@@ -12,27 +12,19 @@ export const AllThatGlittersPageTemplate = ({ title, content, contentComponent, 
 
   return (
   <div className="allan">
-    <article className="media">
-    <div className="columns">
-      <div className="column">
-        <div className="media-content">
-            <div className="content">
-              <h3 className="">
-                {title}
-              </h3>
-              <h6>{author}</h6>
-              <PageContent className="content" content={content} />
-            </div>
-        </div>
+    <div className="row">
+      <div className="col-md-4">
+        <h3 className="">
+          {title}
+        </h3>
+        <h6>{author}</h6>
+        <PageContent  content={content} />
       </div>
-      <div className="column">
-        {/* <figure className="media-right">
-          <img src={betty} alt={betty} width={1000}/>
-        </figure> */}
-        <PreviewCompatibleImage imageInfo={img} /> 
+      <div className="col-md-8">
+          <img src={betty} alt={betty} />
+        {/* <PreviewCompatibleImage imageInfo={img} />  */}
       </div>
     </div>
-    </article>
   </div>
   )
 }

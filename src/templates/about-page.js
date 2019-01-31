@@ -11,28 +11,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent, img, headi
   const PageContent = contentComponent || Content
 
   return (
-  <div className="alex">
-    <article className="media">
-    <div className="columns">
-    <div className="column">
-    <div className="media-content">
-        <div className="content">
-          <h3 className="title is-size-3 has-text-weight-bold is-bold-light">
-            {title}
-          </h3>
-          <h6>{heading}</h6>
-          <PageContent className="content" content={content} />
+     <div className="row alex">
+        <div className="col-md-8">
+            <h3>{title}</h3>
+            <h6>{heading}</h6>
+            <PageContent className="content" content={content} />
         </div>
-      </div>
-    </div>
-    <div className="column">
-      <figure className="media-right">
+        <div className="col-md-4 text-right">
           <img src={betty} alt={betty} width={400}/>
-      </figure>
+        </div>
     </div>
-    </div>
-    </article>
-  </div>
   )
 }
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import BlogWrapper from '../components/Wrapper'
 import Content, { HTMLContent } from '../components/Content'
-// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import betty from "../img/b2.jpg"
 
@@ -13,27 +13,18 @@ export const AmCountingMyBlessingsPageTemplate =
 
   return (
   <div className="allan">
-    <article className="media">
-    <div className="columns">
-      <div className="column">
-        <div className="media-content">
-            <div className="content">
-              <h3 className="">
-                {title}
-              </h3>
-              <h6>{author}</h6>
-              <PageContent className="content" content={content} />
-            </div>
-        </div>
+    <div className="row">
+      <div className="col-md-4">
+        <h3 className="">
+          {title}
+        </h3>
+        <h6>{author}</h6>
+        <PageContent className="content" content={content} />
       </div>
-      <div className="column">
-        <figure className="media-right">
-          <img src={betty} alt={betty} />
-        </figure>
-        {/* <PreviewCompatibleImage imageInfo={img} /> */}
+      <div className="col-md-8">
+        <PreviewCompatibleImage imageInfo={img} /> 
       </div>
     </div>
-    </article>
   </div>
   )
 }

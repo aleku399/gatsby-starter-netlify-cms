@@ -9,91 +9,75 @@ import g5 from "../../../static/img/glam4.jpeg";
 
 
 const Creative =  () => (
-<div className="column is-one-third">
-    <div className="card">
-        <div className="card-image">
-            <figure className="image is-4by3">
+<div>
+    <div className="row align-items-start" >
+        <div className="col-md-4 ">
+            <div className="card" style={{width: "30rem"}}>
                 <Link to="portfolio/all-that-glitters">
-                    <img src={g1} alt="Placeholder image" />
+                    <img className="card-img-top" src={g1} alt="Placeholder image" />
                 </Link>
-            </figure>
+                <div className="card-body t">
+                    <div className="card-text">
+                        <p className="title is-4">ALL THAT GLITTERS</p>
+                        <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="card-content">
-            <div className="media">
-                <div className="media-content">
-                    <p className="title is-4">ALL THAT GLITTERS</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+        <div className="col-md-4">
+            <div className="card" style={{width: "30rem" }}>
+                <Link to="portfolio/all-that-glitters">
+                    <img className="card-img-top" src={g2} alt="Placeholder image" />
+                </Link>
+                <div className="card-body t">
+                    <div className="card-text">
+                        <p className="title is-4">GLAMOUR</p>
+                        <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="col-md-4 ">
+            <div className="card" style={{width: "30rem" }}>
+                <Link to="portfolio/all-that-glitters">
+                    <img className="card-img-top" src={g3} alt="Placeholder image" />
+                </Link>
+                <div className="card-body t">
+                    <div className="card-text">
+                        <p className="title is-4">GLAMOUR</p>
+                        <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div className="card">
-        <div className="card-image">
-            <figure className="image is-4by3">
-                <Link to="portfolio/all-that-glitters">
-                    <img src={g2} alt="Placeholder image" />
-                </Link>
-            </figure>
-        </div>
-        <div className="card-content">
-            <div className="media">
-                <div className="media-content">
-                    <p className="title is-4">GLAMOUR</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+    <div className="row align-items-start mt-5">
+            <div  className="col-md-4">
+                <div className="card" style={{width: "30rem" }}>
+                    <Link to="portfolio/all-that-glitters">
+                        <img className="card-img-top" src={g4} alt="Placeholder image" />
+                    </Link>
+                    <div className="card-body t">
+                        <div className="card-text">
+                            <p className="title is-4">GLAMOUR</p>
+                            <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div className="card">
-        <div className="card-image">
-            <figure className="image is-4by3">
-                <Link to="portfolio/all-that-glitters">
-                    <img src={g3} alt="Placeholder image" />
-                </Link>
-            </figure>
-        </div>
-        <div className="card-content">
-            <div className="media">
-                <div className="media-content">
-                    <p className="title is-4">GLAMOUR</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+            <div  className="col-md-4">
+                <div className="card" style={{width: "30rem" }}>
+                    <Link to="portfolio/all-that-glitters">
+                        <img className="card-img-top" src={g5} alt="Placeholder image" />
+                    </Link>
+                    <div className="card-body t">
+                        <div className="card-text">
+                            <p className="title is-4">GLAMOUR</p>
+                            <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div className="card">
-        <div className="card-image">
-            <figure className="image is-4by3">
-                <Link to="portfolio/all-that-glitters">
-                    <img src={g4} alt="Placeholder image" />
-                </Link>
-            </figure>
-        </div>
-        <div className="card-content">
-            <div className="media">
-                <div className="media-content">
-                    <p className="title is-4">GLAMOUR</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="card">
-        <div className="card-image">
-            <figure className="image is-4by3">
-                <Link to="portfolio/all-that-glitters">
-                    <img src={g5} alt="Placeholder image" />
-                </Link>
-            </figure>
-        </div>
-        <div className="card-content">
-            <div className="media">
-                <div className="media-content">
-                    <p className="title is-4">GLAMOUR</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 )
