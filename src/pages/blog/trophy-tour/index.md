@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: TROPHY TOUR
-path: /blog/2018-1-10-trophy-tour
+path: /blog/trophy-tour
 description: TROPHY TOUR
 date: 2018-1-10T20:20:25.000Z
 image: /img/cococola.jpg

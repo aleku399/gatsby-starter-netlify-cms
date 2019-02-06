@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: RAIN FOREST LODGE
-path: /blog/2018-1-10-rain-forest-lodge
+path: /blog/rain-forest-lodge
 description: RAIN FOREST LODGE
 date: 2018-1-10T10:34:10.000Z
 image: /img/r4.jpg

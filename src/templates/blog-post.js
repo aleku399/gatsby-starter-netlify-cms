@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
 import BlogWrapper from '../components/Wrapper'
 import Slider from '../components/slider'
 import PostLink from "../components/Post-link"
@@ -26,7 +25,7 @@ export const BlogPostTemplate = ({
     <div className="allan">
       {helmet || ''}
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-7">
             <Slider images={photos} /> 
             <h1>
               {title}
@@ -47,7 +46,7 @@ export const BlogPostTemplate = ({
             </div>
           <PostContent content={content} />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <h3>Recent posts</h3>
           <ol>
             {
@@ -137,7 +136,7 @@ export const pageQuery = graphql`
         tags
         image {
           childImageSharp {
-            fluid(maxWidth: 2500, quality: 100) {
+            fluid(quality: 40) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -153,7 +152,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxHeight: 1050, maxWidth: 1920, quality: 100) {
+            fluid(maxHeight: 1050, maxWidth: 1920, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -168,6 +167,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title

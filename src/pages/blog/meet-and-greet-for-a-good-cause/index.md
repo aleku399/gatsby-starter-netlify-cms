@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: MEET AND GREET FOR A GOOD CAUSE
-path: /blog/2018-2-meet-and-greet-for-a-good-cause
+path: /blog/meet-and-greet-for-a-good-cause
 description: MEET AND GREET FOR A GOOD CAUSE
 date: 2018-1-10T20:15:10.000Z
 image: /img/j4.jpg

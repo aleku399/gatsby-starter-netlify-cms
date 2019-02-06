@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-path: /blog/2018-1-10-jungle-nex-door
+path: /blog/jungle-nex-door
 title: JUNGLE NEXT DOOR
 description: THE KIPLING LODGE
 date: 2018-1-10T20:15:10.000Z
