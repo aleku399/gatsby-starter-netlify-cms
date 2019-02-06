@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby'
 
 import g1 from "../../../static/img/g1.jpeg";
 import a1 from "../../../static/img/about.jpeg";
@@ -10,11 +9,11 @@ const Portraits =  () => (
 <div>
     <div className="row">
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem"}}>
+            <div className="card">
                 <div className="card-img-top">
-                    <Link to="/portfolio/hair-and-makeup/">
+                    <a to="/portfolio/hair-and-makeup/">
                         <img  src={talk} alt="Placeholder image" />
-                    </Link>
+                    </a>
                 </div>
                 <div className="card-body t">
                     <p className="title is-4">HAIR AND MAKE UP</p>
@@ -23,10 +22,10 @@ const Portraits =  () => (
             </div>
         </div>
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem" }}>
-            <Link to="portfolio/all-that-glitters">
+            <div className="card">
+            <a to="portfolio/all-that-glitters">
                 <img className="card-img-top" src={g1} alt="Placeholder image" />
-            </Link>
+            </a>
             <div className="card-body t">
                 <div className="card-text">
                     <p className="title is-4">ALL THAT GLITTERS</p>
@@ -36,10 +35,10 @@ const Portraits =  () => (
             </div>
         </div>
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem" }}>
-            <Link to="/portfolio/hair-and-makeup/">
+            <div className="card">
+            <a to="/portfolio/hair-and-makeup/">
                 <img className="card-img-top" src={a1} alt="Placeholder image" />
-            </Link>
+            </a>
             <div className="card-body t">
                 <div className="card-text">
                     <p className="title is-4">VALENTINE DAY PORTRAIT</p>
@@ -51,10 +50,10 @@ const Portraits =  () => (
     </div>
     <div className="row mt-5">
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem" }}>
-                <Link to="portfolio/all-that-glitters">
+            <div className="card">
+                <a to="portfolio/all-that-glitters">
                     <img className="card-img-top" src={a2} alt="Placeholder image" />
-                </Link>
+                </a>
                 <div className="card-body t">
                     <div className="card-text">
                         <p className="title is-4">VALENTINE DAY SHOOT</p>

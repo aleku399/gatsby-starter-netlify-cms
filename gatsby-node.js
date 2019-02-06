@@ -12,10 +12,12 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             id
+            fileAbsolutePath
             fields {
               slug
             }
             frontmatter {
+              path
               tags
               templateKey
             }
@@ -31,8 +33,11 @@ exports.createPages = ({ actions, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach(edge => {
+    posts.forEach( (edge, index) => {
       const id = edge.node.id
+      const next = index === 0 ? null : posts[index - 1].node
+      const prev = index === posts.length - 1 ? null : posts[index + 1].node
+
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
@@ -41,7 +46,11 @@ exports.createPages = ({ actions, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
+          slug: edge.node.fields.slug,
           id,
+          absolutePathRegex: `/^${path.dirname(edge.node.fileAbsolutePath)}/`,
+          prev,
+          next,
         },
       })
     })

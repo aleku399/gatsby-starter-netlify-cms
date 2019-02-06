@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import BlogWrapper from '../components/Wrapper'
 import Content, { HTMLContent } from '../components/Content'
 import Portfolio from '../components/portfolio'
-import betty from "../img/glam1.jpeg"
+import betty from "../../static/img/about2.jpeg"
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const PortfolioPageTemplate = ({
@@ -63,6 +63,13 @@ export const PortfolioPageQuery = graphql`
         travel
         photo
         traits
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

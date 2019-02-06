@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import betty from "../img/about.jpeg"
 
@@ -12,13 +13,14 @@ export const AboutPageTemplate = ({ title, content, contentComponent, img, headi
 
   return (
      <div className="row alex">
-        <div className="col-md-8">
+        <div className="col-md-7">
             <h3>{title}</h3>
             <h6>{heading}</h6>
             <PageContent className="content" content={content} />
         </div>
-        <div className="col-md-4 text-right">
-          <img src={betty} alt={betty} width={400}/>
+        <div className="col-md-5 ">
+          {/* <PreviewCompatibleImage imageInfo={img} />  */}
+          <img src={betty} alt="about-image" style={{height: "455px"}}/>
         </div>
     </div>
   )
@@ -41,6 +43,7 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         heading={post.frontmatter.heading}
+        // img={post.fromtmatter.image}
       />
     </Layout>
   )

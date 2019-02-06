@@ -4,7 +4,8 @@
     margin-top: 50px;
     background-color: white;
     padding: 40px; 
-    margin-top: -48px;  
+    margin-top: -48px;
+    z-index: 2;  
   }
 .allan::before { 
     position: absolute;

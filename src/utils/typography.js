@@ -1,7 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-    baseFontSize: "10px",
+    baseFontSize: "13px",
     headerFontFamily: [
         "Avenir Next",
         "Helvetica Neue",
@@ -12,7 +12,8 @@ const typography = new Typography({
       ],
     bodyFontFamily: ["Georgia", "serif"],
     baseLineHeight: "24px",
-    bodyWeight: "400",
+    bodyWeight: "300",
+    letterSpacing: "3px",
 })
 
 export default typography

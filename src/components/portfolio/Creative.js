@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {Link} from 'gatsby';
 import g1 from "../../../static/img/g1.jpeg";
@@ -12,7 +13,7 @@ const Creative =  () => (
 <div>
     <div className="row align-items-start" >
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem"}}>
+            <div className="card" >
                 <Link to="portfolio/all-that-glitters">
                     <img className="card-img-top" src={g1} alt="Placeholder image" />
                 </Link>
@@ -25,7 +26,7 @@ const Creative =  () => (
             </div>
         </div>
         <div className="col-md-4">
-            <div className="card" style={{width: "30rem" }}>
+            <div className="card">
                 <Link to="portfolio/all-that-glitters">
                     <img className="card-img-top" src={g2} alt="Placeholder image" />
                 </Link>
@@ -38,7 +39,7 @@ const Creative =  () => (
             </div>
         </div>
         <div className="col-md-4 ">
-            <div className="card" style={{width: "30rem" }}>
+            <div className="card">
                 <Link to="portfolio/all-that-glitters">
                     <img className="card-img-top" src={g3} alt="Placeholder image" />
                 </Link>
@@ -53,7 +54,7 @@ const Creative =  () => (
     </div>
     <div className="row align-items-start mt-5">
             <div  className="col-md-4">
-                <div className="card" style={{width: "30rem" }}>
+                <div className="card" >
                     <Link to="portfolio/all-that-glitters">
                         <img className="card-img-top" src={g4} alt="Placeholder image" />
                     </Link>
@@ -66,7 +67,7 @@ const Creative =  () => (
                 </div>
             </div>
             <div  className="col-md-4">
-                <div className="card" style={{width: "30rem" }}>
+                <div className="card" >
                     <Link to="portfolio/all-that-glitters">
                         <img className="card-img-top" src={g5} alt="Placeholder image" />
                     </Link>
@@ -83,4 +84,3 @@ const Creative =  () => (
 )
 
 export default  Creative;
- 
