@@ -1,0 +1,33 @@
+.sluglist {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+.slug {
+    color: #999;
+    padding: 8px 0;
+    border-bottom: 1px dotted rgba(150, 150, 150, 0.18)
+}
+
+.slug:last-child {
+    border: none;
+}
+ 
+.sluglink {
+  text-decoration: none;
+  color: #999;
+  display: block;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease; 
+}
+
+.sluglink:hover {
+    font-size: 15px;
+    color: black;    
+}

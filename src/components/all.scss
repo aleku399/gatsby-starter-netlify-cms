@@ -9,9 +9,19 @@
 @import "./css/tabs.css";
 @import "./css/light.scss";
 @import "./css/slider.css";
+@import "./css/path.css";
 
 html, body {
     overflow-x: hidden;
+}
+ .navbar-brand  {
+    color: black;
+}
+.nav-link {
+    color: #999;
+}
+.nav-link:hover {
+    color: black;
 }
 
 .card-img-top {

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const PostLink = ({ post }) => (
   <div>
-    <Link to={post.fields.slug}>
+    <Link className="sluglink" to={post.fields.slug}>
       {post.frontmatter.title} 
     </Link>
   </div>

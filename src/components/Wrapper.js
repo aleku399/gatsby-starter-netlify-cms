@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
-import Navbar from '../components/Navbar'
+import Navlayout from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.scss'
 
@@ -37,7 +37,7 @@ const BlogWrapper = ({ children, img }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
           
         </Helmet>
-        <Navbar />
+        <Navlayout />
         <div className="jumbotron jumbotron-fluid">
           <div className="bg" style={{ backgroundImage: `url(${
             !!img.childImageSharp

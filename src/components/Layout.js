@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
-import Navbar from '../components/Navbar'
+import Navlayout from '../components/Navbar'
 import Footer from '../components/Footer'
 // normalizes css with in browsers
 import 'modern-normalize/modern-normalize.css'
@@ -40,16 +40,15 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <header>
-          <Navbar />
-        </header>
+        <Navlayout />
         <main role="main">
           <div className="jumbotron">
             <div style={{
-              marginTop: "60px",
+              marginTop: "-5px",
               marginLeft: "40px",
-              marginRight: "40px"
-            }}>
+              marginRight: "40px",
+            }}
+            >
               {children}
             </div>
           </div>

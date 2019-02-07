@@ -25,7 +25,7 @@ export const BlogPostTemplate = ({
     <div className="allan">
       {helmet || ''}
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-8">
             <Slider images={photos} /> 
             <h1>
               {title}
@@ -46,17 +46,17 @@ export const BlogPostTemplate = ({
             </div>
           <PostContent content={content} />
         </div>
-        <div className="col-md-5">
+        <div className="col-md-4">
           <h3>Recent posts</h3>
-          <ol>
+          <ul className="sluglist">
             {
               paths.filter(edge => !!edge.node.frontmatter.date).map( (edge, i) => (
-                <li key={i}>
+                <li className="slug" key={i}>
                   <PostLink key={edge.node.id} post={edge.node} />
                 </li>
               ))
             }
-          </ol>
+          </ul>
         </div>
       </div>
       <div className="row">    
@@ -136,7 +136,7 @@ export const pageQuery = graphql`
         tags
         image {
           childImageSharp {
-            fluid(quality: 40) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -152,7 +152,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxHeight: 1050, maxWidth: 1920, quality: 90) {
+            fluid(maxHeight: 1050, maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

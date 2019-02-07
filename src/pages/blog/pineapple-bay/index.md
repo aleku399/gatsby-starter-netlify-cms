@@ -32,7 +32,7 @@ tags:
   </div>
   <div class="row">
     <div class="col">
-      <img  src="./p3.jpeg" alt="betty" />
+      <img  src="./k3.jpeg" alt="betty" />
     </div>
     <div class="col">
       <p>
