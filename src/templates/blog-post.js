@@ -92,7 +92,11 @@ const BlogPost = ({ data }) => {
   console.log(`photos: ${photos}`)
   console.log(data)
   return (
-    <BlogWrapper img={post.frontmatter.image}>
+    <BlogWrapper
+      img={post.frontmatter.image}
+      title={post.frontmatter.title}
+      slug={post.fields.slug}
+      >
       <BlogPostTemplate
         paths={routes.edges}
         photos={photos.edges}
@@ -128,6 +132,9 @@ export const pageQuery = graphql`
   query BlogPostByID($slug: String!, $absolutePathRegex: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      fields {
+        slug
+      }
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

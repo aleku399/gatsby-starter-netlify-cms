@@ -41,7 +41,6 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navlayout />
-        <main role="main">
           <div className="jumbotron">
             <div style={{
               marginTop: "-5px",
@@ -53,7 +52,6 @@ const TemplateWrapper = ({ children }) => (
             </div>
           </div>
           <Footer/>
-        </main>
       </div>
     )}
   />

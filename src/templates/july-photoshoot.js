@@ -118,7 +118,7 @@ const  JulyPhotoShootPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={j4}>
+    <BlogWrapper img={j4} title={post.frontmatter.title}>
       < JulyPhotoShootPageTemplate
         images={arrImages}
         contentComponent={HTMLContent}

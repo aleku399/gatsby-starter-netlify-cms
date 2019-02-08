@@ -9,6 +9,7 @@ tags:
   - UNCATEGORIZED
   - POST
 ---
+![betty](./p1.jpg)
 <div class="container">
   <div class="row">
      <div class="col">
@@ -17,9 +18,10 @@ tags:
       </p>
     </div>
     <div class="col">
-      <img src="./p1.jpg" />
+      ![food](http://octodex.github.com/images/founding-father.jpg)
     </div>
   </div>
+   ![betty](./p1.jpg)
   <div class="row">
     <div class="col">
       <img src="./p2.jpg" alt="image"/>

@@ -34,7 +34,7 @@ const PortfolioPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={betty}>
+    <BlogWrapper img={betty} title={post.frontmatter.title}>
       <PortfolioPageTemplate
         all={post.frontmatter.all}
         creative={post.frontmatter.creative}
@@ -57,6 +57,7 @@ export const PortfolioPageQuery = graphql`
   query PortfolioPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
         all
         creative
         fashion

@@ -62,26 +62,20 @@ html, body {
   }
 }
 
-
-.body {
-    letter-spacing: 1px;
-}
-
-
-.bg {
-    position: relative;
-    background-size: cover;
+#top-area {
+    color: white;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 50% 30%;
-    width: 100%;
+    background-size: cover;
     height: 50vh;
 }
-.bg::before {  
+#top-area::before {  
   content: '';
-  position: absolute;
+  position: fixed;
   left: 0; right: 0; top: 0; bottom: 0;
   z-index: 1;
-  opacity: 0.9;  
+  opacity: 0.9;
+  height: 60vh;  
   background-color: rgba(0, 0, 0, 0.65);
 }
 

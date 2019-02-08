@@ -1,6 +1,7 @@
 ---
 templateKey: 'portfolio'
 path: /portfolio
+title: PORTFOLIO
 all: ALL
 creative:  CREATIVE
 fashion: FASHION

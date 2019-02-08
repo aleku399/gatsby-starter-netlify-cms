@@ -1,12 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 
+// import PostLink from './Post-link'
 import Navlayout from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.scss'
 
-const BlogWrapper = ({ children, img }) => (
+const BlogWrapper = ({ children, img, title, slug, post }) => (
   <StaticQuery
     query={graphql`
       query BlogQuery {
@@ -19,7 +20,7 @@ const BlogWrapper = ({ children, img }) => (
         }
     `}
     render={data => (
-      <div  className='body'>
+      <div>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -38,22 +39,45 @@ const BlogWrapper = ({ children, img }) => (
           
         </Helmet>
         <Navlayout />
-        <div className="jumbotron jumbotron-fluid">
-          <div className="bg" style={{ backgroundImage: `url(${
-            !!img.childImageSharp
-            ? img.childImageSharp.fluid.src
-            : img
-          })` }}>
-          </div>
-          <div
-          style={{
-            marginLeft: "40px",
-            marginRight: "40px"
-          }}
+        <main role="main" style={{backgroundColor: "#F1F1F1", paddingBottom: "15px",}}>
+          <header
+            className="jumbotron jumbotron-fluid"
+            id="top-area"
+            style={{ backgroundImage: `url(${
+              !!img.childImageSharp
+              ? img.childImageSharp.fluid.src
+              : img
+            })` }}
           >
-            {children}
+            <div className="container">
+              <h3 className="display">
+                {title}
+              </h3>
+              <div className="row">
+                
+                  <Link to ="/">
+                    HOME 
+                  </Link>
+                  <div></div>
+                      /
+                  <Link to={slug}> 
+                    {title}
+                  </Link> 
+                
+                {/* < PostLink post={post}/> */}
+              </div>
+            </div>
+          </header>
+          <div
+
+            style={{
+              marginLeft: "10px",
+              marginRight: "10px",
+            }}
+          >
+              {children}
           </div>
-        </div>
+        </main>
         <Footer />
       </div>
     )}
