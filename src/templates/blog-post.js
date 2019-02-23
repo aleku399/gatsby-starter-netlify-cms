@@ -3,10 +3,14 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { DiscussionEmbed } from "disqus-react";
 import BlogWrapper from '../components/Wrapper'
 import Slider from '../components/slider'
+import  Carousel from '../components/slider/Carousel'
 import PostLink from "../components/Post-link"
 import Content, { HTMLContent } from '../components/Content'
+import ProjectPagination from "../components/ProjectPagination"
+import Insta from "../components/Insta"
 
 export const BlogPostTemplate = ({
   content,
@@ -15,39 +19,32 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  img,
   photos,
   paths,
+  id,
+  next,
+  prev,
 }) => {
   const PostContent = contentComponent || Content
+  const disqusShortname = " http-localhost-8000-XKdULE3kTi.disqus.com"
+  const disqusConfig = {
+    identifier: id,
+    title: title,
+  }
 
   return (
     <div className="allan">
       {helmet || ''}
       <div className="row">
         <div className="col-md-8">
-            <Slider images={photos} /> 
-            <h1>
-              {title}
-            </h1>
-            <div>
-              {date}
-              {tags && tags.length ? (
-                <div>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </div>
-          <PostContent content={content} />
+          <div className="row">
+            <PostContent content={content} />
+          </div>
+          <ProjectPagination next={next} prev={prev} /> 
         </div>
-        <div className="col-md-4">
-          <h3>Recent posts</h3>
+        <div className="col-md-4 side">
+          <h3 className="recent">RECENT POSTS</h3>
+          <hr></hr>
           <ul className="sluglist">
             {
               paths.filter(edge => !!edge.node.frontmatter.date).map( (edge, i) => (
@@ -57,21 +54,13 @@ export const BlogPostTemplate = ({
               ))
             }
           </ul>
+          <h3 className="recent">INSTAGRAM</h3>
+          <hr></hr>
+          <Insta />
         </div>
       </div>
-      <div className="row">    
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <div className="row">
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </div>
     </div>
   )
@@ -85,8 +74,9 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
+  const { next, prev } = pageContext
   const photos = data.photos
   const routes = data.routes
   console.log(`photos: ${photos}`)
@@ -98,9 +88,11 @@ const BlogPost = ({ data }) => {
       slug={post.fields.slug}
       >
       <BlogPostTemplate
+        next={next}
+        prev={prev}
+        id={post.id}
         paths={routes.edges}
         photos={photos.edges}
-        img={post.frontmatter.image}
         date={post.frontmatter.date}
         content={post.html}
         contentComponent={HTMLContent}
@@ -143,8 +135,16 @@ export const pageQuery = graphql`
         tags
         image {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 1000, quality: 100) {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
             }
           }
         }
@@ -159,8 +159,8 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxHeight: 1050, maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid
+            sizes(maxHeight: 400, quality: 100) {
+              ...GatsbyImageSharpSizes
             }
           }
         }

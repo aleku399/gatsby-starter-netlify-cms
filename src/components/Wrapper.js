@@ -40,26 +40,22 @@ const BlogWrapper = ({ children, img, title, slug, post }) => (
         </Helmet>
         <Navlayout />
         <main role="main" style={{backgroundColor: "#F1F1F1", paddingBottom: "15px",}}>
-          <header
-            className="jumbotron jumbotron-fluid"
-            id="top-area"
-            style={{ backgroundImage: `url(${
+          <div className="bg jumbotron jumbotron-fluid"
+             style={{ backgroundImage: `url(${
               !!img.childImageSharp
               ? img.childImageSharp.fluid.src
               : img
             })` }}
           >
-            <div className="container">
-              <h3 className="display">
+            <div style={{textAlign: "center", margin: "60px"}}>
+              <h3  className="blogtitle" >
                 {title}
               </h3>
-              <div className="row">
-                
+              <div>              
                   <Link to ="/">
                     HOME 
                   </Link>
-                  <div></div>
-                      /
+                  <span>/</span>
                   <Link to={slug}> 
                     {title}
                   </Link> 
@@ -67,7 +63,7 @@ const BlogWrapper = ({ children, img, title, slug, post }) => (
                 {/* < PostLink post={post}/> */}
               </div>
             </div>
-          </header>
+          </div>
           <div
 
             style={{

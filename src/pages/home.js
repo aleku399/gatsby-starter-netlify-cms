@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Tags from '../components/Tags'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,43 +12,45 @@ export default class IndexPage extends React.Component {
     console.log(data)
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="row">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-            </div>
+          <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+          <div className="blog-posts">
             {posts
-              .map(({ node: post }) => (
-                <div
-                  className="row"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <div className="col">
-                    <PreviewCompatibleImage imageInfo={post.frontmatter.image} alt="image" />
-                  </div>
-                  <div className="col">
-                    <p>
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                        {post.frontmatter.title}
-                      </Link>
-                      <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
-                    </p>
-                    <p>
-                      {post.excerpt}
-                      <br />
-                      <br />
-                      <Link className="button is-small" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              ))}
+              .filter((post) => post.node.frontmatter.title.length > 0)
+              .map(({ node: post }, index) => {
+            return (
+              <div
+                className={`blog-post-preview ${
+                index % 2 !== 0 ? 'inverse' : ''
+                }`}
+                key={post.id}
+              >
+              <div className="post-info">
+                <h1 className="title">
+                  <Link to={post.fields.slug}>
+                    {post.frontmatter.title}
+                  </Link>
+                </h1>
+              <div className="meta">
+                  <div className="tags">
+                  <Tags list={post.frontmatter.tags} />
+              </div>
+              <h4 className="date">{post.frontmatter.date}</h4>
+            </div>
+            <p className="excerpt">{post.excerpt}</p>
+            <div>
+              <Link to={post.fields.slug} className="see-more">
+              Keep Reading →
+              </Link>
+            </div>
           </div>
-        </section>
-      </Layout>
+         <div className="post-img">
+           <PreviewCompatibleImage imageInfo={post.frontmatter.image} alt="image" />
+         </div>
+       </div>
+      );
+    })}
+   </div>     
+  </Layout>
     )
   }
 }
@@ -68,7 +71,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 700)
           id
           fields {
             slug
@@ -76,14 +79,15 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            tags
             date(formatString: "MMMM DD, YYYY")
             image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+                }
+              }
             }
-          }
-        }
           }
         }
       }

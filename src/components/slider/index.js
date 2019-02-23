@@ -50,9 +50,8 @@ class Slider extends React.Component {
             key={index}
           >
             <Img
-              // className="card-img-top"
               fluid={item.node.childImageSharp.fluid}
-              key={item.node.childImageSharp.fluid.src} 
+              key={index} 
             />
           </CarouselItem>
         );

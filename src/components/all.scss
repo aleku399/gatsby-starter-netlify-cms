@@ -1,4 +1,6 @@
 // loads bootstrap and base styles.
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @import './scss/gatstrap.scss';
 @import './scss/colors.scss';
 
@@ -6,11 +8,50 @@
 @import "./css/line.css";
 @import "./css/blog.css";
 @import "./css/gallery.scss";
+// @import "./css/comments.scss";
 @import "./css/tabs.css";
 @import "./css/light.scss";
-@import "./css/slider.css";
+// @import "./css/slider.scss";
 @import "./css/path.css";
+@import "./css/tags.css";
+@import "./css/meet.css";
+@import "./css/pine.css";
+@import "./css/trophy.css";
+@import "./css/rain.css";
+@import "./css/wild.css";
+@import "./css/jungle.css";
 
+p {
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgb(51, 51, 51);
+    text-size-adjust: 100%;
+}
+.f {
+    margin-left: 10px;
+}
+.o {
+    margin-right: 5px;
+}
+.s {
+    width: 700px;
+}
+.l {
+    padding-left: 5px;
+}
+.pag {
+    width: 100%;
+    padding: 20px;
+    border: 1px dotted rgba(150, 150, 150, 0.18);
+}
+.side {
+    width: 100%;
+    padding: 20px;
+    border-left: 1px dotted rgba(150, 150, 150, 0.18);
+}
 html, body {
     overflow-x: hidden;
 }
@@ -29,9 +70,20 @@ html, body {
     height: 15vw;
     object-fit: cover;
 }
-.gatsby-image-wrapper img {
-    object-fit: contain !important; // !important to override the element style
- }
+
+// .gatsby-resp-image-link  {
+//     border: 2px solid blue;
+//     width: 238px;
+//  }
+// .container {
+//     font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
+//     line-height: 24px;
+//     font-size: 13px;
+//     font-weight: 300;
+//     color: #333;
+//     letter-spacing: 1px;
+// }
+
 // .full-width-image-container {
 //     width: 100vw;
 //     height: 400px;
@@ -61,9 +113,22 @@ html, body {
     margin-top: 0;
   }
 }
-
-#top-area {
-    color: white;
+hr {
+  width: 24px;
+  height: 6px;
+}
+.r {
+    width: 783px;
+    height: 440px;
+}
+.gatsby-resp-image-link {
+   width: 250px;
+}
+.yk {
+    display: flex;
+    flex-direction: row;
+}
+.bg {   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +141,7 @@ html, body {
   z-index: 1;
   opacity: 0.9;
   height: 60vh;  
-  background-color: rgba(0, 0, 0, 0.65);
+  // background-color: rgba(0, 0, 0, 0.65);
 }
 
 // .gatsby-resp-image-image {
@@ -105,4 +170,61 @@ html, body {
 }
 .fixed-top {
     z-index: 950;
+}
+.ex {
+    margin-top: 10px;
+}
+.blogtitle {
+    margin-bottom: "40px";
+    font-size: 18px;
+    font-weight: 50;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: rgb(255, 255, 255);   
+} 
+.round {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.round:hover {
+    cursor: pointer;
+    opacity: 0.8;
+} 
+.linktitle:hover {
+    cursor: pointer;
+    color: black;
+}
+.recent {
+    display: block;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+.bli-title a {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+    color: #333;
+}
+bli-meta a {
+    margin: 5px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: #999;
+}
+
+.test {
+    border: 1px solid blue;
+    height: 40px;
 }

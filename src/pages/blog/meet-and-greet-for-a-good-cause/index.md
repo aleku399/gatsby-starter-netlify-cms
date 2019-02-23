@@ -4,12 +4,29 @@ title: MEET AND GREET FOR A GOOD CAUSE
 path: /blog/meet-and-greet-for-a-good-cause
 description: MEET AND GREET FOR A GOOD CAUSE
 date: 2018-1-10T20:15:10.000Z
-image: /img/j4.jpg
+image: /img/meet2.jpeg
 tags:
   - UNCATEGORIZED
   - POST
 ---
-<div class="container">
+
+<div class='slider'>
+  <div class='slide1'></div>
+  <div class='slide2'></div>
+  <div class='slide3'></div>
+</div>
+<div class="bli-info">
+  <h2 class="bli-title">
+    <a href="#" title="Meet and greet">MEET AND GREET FOR A GOOD CAUSE</a>
+  </h2>
+  <div class="bli-meta">
+    <i class="fa fa-clock-o"></i>
+    <a href="#" class="article-time">August 27, 2017</a>
+    <i class="fa fa-folder-o"></i>
+    <a href="#">Uncategorized</a>
+  </div>
+</div>
+
 On 10th.Nov. 2018 Bettinah Tianah a TV personality, digital marketer, Brand Ambassador is organising her first ever meet and greet.
 
 One of the core goals of the event is to bridge the gap between the youth and the corporate world through speaker sessions.
@@ -25,4 +42,3 @@ On December 1st – 2nd 2018 with support from NRM chairman Eastern region Capt.
 Bettinah and Jamillah Mayanja of Smart Girls Foundation will head to Bulamagi for an outreach, giving back to the community. The focus will be empowering the girl child.
 
 For those who would like to contribute to this noble cause, please use 0778349029. Thank you for your kind hearts
-</div>

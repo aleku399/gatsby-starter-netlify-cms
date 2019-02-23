@@ -1,0 +1,93 @@
+.rainer {
+    position: relative;
+    max-width: 783px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.rain1,
+.rain2,
+.rain3,
+.rain4,
+.rain5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.rain1 {
+    background: url(../../img/r1.jpg)no-repeat;
+    background-size: 100%;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+
+}
+
+.rain2 {
+    background: url(../../img/r2.jpg)no-repeat center;
+    background-size: cover;
+    animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+
+.rain3 {
+    background: url(../../img/rain.jpg)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: fade3 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+    33.333% {
+        opacity: 0
+    }
+
+    66.666% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0
+    }
+
+    33.333% {
+        opacity: 1
+    }
+
+    66.666% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0
+    }
+
+    33.333% {
+        opacity: 0
+    }
+
+    66.666% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
