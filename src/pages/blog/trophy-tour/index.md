@@ -3,37 +3,26 @@ templateKey: blog-post
 title: TROPHY TOUR
 path: /blog/trophy-tour
 description: TROPHY TOUR
-date: 2018-1-10T20:20:25.000Z
+date: 2018-3-31T20:20:25.000Z
 image: /img/cococola.jpg
 tags:
   - UNCATEGORIZED
   - POST
 ---
 
-<div class='trophy'>
-  <div class='tour1'></div>
-  <div class='tour2'></div>
-  <div class='tour3'></div>
-</div>
+The Coca-Cola Company has a deeply entrenched brand. For years, the company’s strategists and marketers have done incredible work defining and representing the brand across the entire world.
+So you can imagine my excitement when I was contacted by Coca-Cola Africa  — they said they were interested in working with me. Of course I agreed! How could I possibly say no to Coca-Cola? I had been hoping to be part  of the trophy tour ever since I saw an ad about it social media. This is the fourth time in history that Coca-Cola and FIFA have come together to bring the Trophy Tour to the world.
 
-<div class="f">
-  <p>
-    The Coca-Cola Company has a deeply entrenched brand. For years, the company’s strategists and marketers have done incredible work defining and representing the brand across the entire world.
-    So you can imagine my excitement when I was contacted by Coca-Cola Africa  — they said they were interested in working with me. Of course I agreed! How could I possibly say no to Coca-Cola? I had been hoping to be part  of the trophy tour ever since I saw an ad about it social media. This is the fourth time in history that Coca-Cola and FIFA have come together to bring the Trophy Tour to the world.
-  </p>
-  <p>
-    I was ecstatic and overjoyed that my dream was actually coming true. And the cherry on top of the cake was that we would be returning from Cape Town to Uganda aboard the Coca Cola-FIFA World Cup
-  </p>
-</div>
+I was ecstatic and overjoyed that my dream was actually coming true. And the cherry on top of the cake was that we would be returning from Cape Town to Uganda aboard the Coca Cola-FIFA World Cup
 <div class="row">
   <div class="col">
-    <img src="./t1.jpg" alt="trophy"/>
+   <img src="./tour1.jpeg" alt="tour">
   </div>
   <div class="col">
-    <img src="./t2.jpg" alt="trophy"/>
+   <img src="./tour2.jpg" alt="tour">
   </div>
   <div class="col">
-    <img src="./t3.jpg" alt="trophy"/>
+     <img src="./tour3.jpg" alt="tour">
   </div>
 </div>
 <div>
@@ -43,13 +32,13 @@ tags:
 </div>
 <div class="row">
   <div class="col">
-    <img src="./t11.jpg" alt="Trophy">
+     <img src="./tour5.jpg" alt="tour">
   </div>
   <div class="col">
-    <img src="./t7.jpg" alt="Trophy">
+    <img src="./tour8.jpg" alt="tour">
   </div>
   <div class="col">
-    <img src="./t20.jpg" alt="Trophy">
+   <img src="./tour17.jpg" alt="tour">
   </div>
 </div>
 <div>
@@ -60,15 +49,15 @@ tags:
   up real quick and get ready for my photo shoot that I had booked  prior to my Cape Town trip.
   </p>
 </div>
-<div class="row o">
+<div class="row">
   <div class="col">
-    <img src="./t14.jpeg" src="Trophy">
+   <img src="./tour7.jpeg" alt="tour">
   </div>
   <div class="col">
-      <img src="./t12.jpg" src="Trophy">
+   <img src="./tour9.jpeg" alt="tour">
   </div>
   <div class="col">
-      <img src="./t16.jpeg" src="Trophy">
+   <img src="./tour19.jpg" alt="tour">
   </div>
 </div>
   <div class="o">
@@ -79,13 +68,13 @@ tags:
   </div>
   <div class="row">
     <div class="col">
-      <img src="./t9.jpg" src="Trophy">
+    <img src="./tour20.jpg" alt="tour">
     </div>
     <div class="col">
-       <img src="./t10.jpg" src="Trophy">
+     <img src="./tour21.jpg" alt="tour">
     </div>
      <div class="col">
-       <img src="./t17.jpg" src="Trophy">
+      <img src="./tour24.jpg" alt="tour">
     </div>
   </div>
 <div>
@@ -101,12 +90,12 @@ tags:
 </div>
   <div class="row">
     <div class="col">
-      <img src="./t18.jpeg" alt="tour">
+    <img src="./tour16.jpg" alt="tour">
     </div>
     <div class="col">
-      <img src="./t13.jpg" alt="tour">
+    <img src="./tour15.jpg" alt="tour">
     </div>
     <div class="col">
-      <img src="./t14.jpeg" alt="tour">
+    <img src="./tour12.jpg" alt="tour">
     </div>
   </div>  

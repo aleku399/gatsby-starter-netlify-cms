@@ -4,9 +4,11 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { DiscussionEmbed } from "disqus-react";
+import {FaFolder, FaClock} from 'react-icons/fa';
 import BlogWrapper from '../components/Wrapper'
 import Slider from '../components/slider'
 import  Carousel from '../components/slider/Carousel'
+import  Show from '../components/slider/Show'
 import PostLink from "../components/Post-link"
 import Content, { HTMLContent } from '../components/Content'
 import ProjectPagination from "../components/ProjectPagination"
@@ -23,6 +25,7 @@ export const BlogPostTemplate = ({
   paths,
   id,
   next,
+  day,
   prev,
 }) => {
   const PostContent = contentComponent || Content
@@ -38,6 +41,22 @@ export const BlogPostTemplate = ({
       <div className="row">
         <div className="col-md-8">
           <div className="row">
+            <Slider images={photos} />
+            <div class="bli-info">
+              <h2 class="bli-title">
+                <span href="#" title="Meet and greet">{title}</span>
+              </h2>
+              <div class="bli-meta">
+                  <div>
+                    <FaClock />
+                    <span href="#" class="article-time">{date}</span>
+                  </div>
+                  <div>
+                    <FaFolder/>
+                    <span class="article-time">BLOG</span>
+                  </div>
+                </div>
+            </div>
             <PostContent content={content} />
           </div>
           <ProjectPagination next={next} prev={prev} /> 
@@ -159,8 +178,8 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            sizes(maxHeight: 400, quality: 100) {
-              ...GatsbyImageSharpSizes
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

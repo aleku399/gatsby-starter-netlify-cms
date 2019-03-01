@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 import BlogWrapper from '../components/Wrapper'
 import Content, { HTMLContent } from '../components/Content'
 import Portfolio from '../components/portfolio'
+// import TabsPage from '../components/portfolio/Try'
 import betty from "../../static/img/about2.jpeg"
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -17,7 +18,7 @@ export const PortfolioPageTemplate = ({
   
   return (
   <div  className="allan">
-    <Portfolio />
+    <Portfolio  />
   </div>
   )
 }
@@ -34,7 +35,7 @@ const PortfolioPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={betty} title={post.frontmatter.title}>
+    <BlogWrapper img={betty} >
       <PortfolioPageTemplate
         all={post.frontmatter.all}
         creative={post.frontmatter.creative}

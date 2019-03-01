@@ -3,7 +3,7 @@ templateKey: 'about-page'
 path: /about
 title: BETTINAH TIANAH
 heading:  FASHION ICON, TV HOST , ACTOR
-image: /img/about.jpeg
+image: /img/green.jpg
 ---
 The face of everything young, fresh and modern in Uganda. I started out in the Ugandan entertainment at the age of 15 as the host of “Youth Voice” followed by popular television shows “Be My Date” and “About Town”, I also became a respected actor after landing the lead role as Rhona in the Hostel serenity season 4 that aired on  Uganda’s NTV.
 

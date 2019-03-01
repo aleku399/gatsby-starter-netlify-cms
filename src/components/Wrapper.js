@@ -47,21 +47,36 @@ const BlogWrapper = ({ children, img, title, slug, post }) => (
               : img
             })` }}
           >
+            <div className="cover page-header-cover"></div> 
             <div style={{textAlign: "center", margin: "60px"}}>
-              <h3  className="blogtitle" >
+              <h1  className="blogtitle" >
                 {title}
-              </h3>
-              <div>              
+              </h1>
+              <ol className="crumb">              
+                <li>  
                   <Link to ="/">
                     HOME 
                   </Link>
-                  <span>/</span>
+                </li>
+                <span className="crumb-separator">   /  </span>
+                <li>
+                  <Link to ="/">
+                    PORTFOLIO 
+                  </Link>
+                </li>
+                <span className="crumb-separator">  /  </span>
+                <li>
+                <Link to ="/">
+                    {post} 
+                  </Link>
+                </li>
+                <span className="crumb-separator">  /  </span>
+                <li>
                   <Link to={slug}> 
                     {title}
                   </Link> 
-                
-                {/* < PostLink post={post}/> */}
-              </div>
+                </li>
+              </ol>
             </div>
           </div>
           <div

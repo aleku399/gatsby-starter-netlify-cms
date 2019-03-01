@@ -7,9 +7,7 @@ const Travel =  () => (
 <div className="row">
     <div className="col-md-4" >
         <div className="card" >
-            <a to="/portfolio/hair-and-makeup/">
-                <img className="card-img-top" src={z1} alt="Placeholder image" />
-            </a>
+            <img className="card-img-top" src={z1} alt="Placeholder image" />
             <div className="card-body t">
                 <div className="card-text">
                     <p className="title is-4">ZANZIBAR TALES</p>
@@ -20,9 +18,7 @@ const Travel =  () => (
     </div>
     <div className="col-md-4 ">
         <div className="card">
-            <a to="portfolio/all-that-glitters">
-                <img className="card-img-top" src={z2} alt="Placeholder image" />
-            </a>
+            <img className="card-img-top" src={z2} alt="Placeholder image" />
             <div className="card-body t">
                 <div className="card-text">
                     <p className="title is-4">ZANZIBAR TALES</p>

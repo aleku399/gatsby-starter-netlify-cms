@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => (
         }
     `}
     render={data => (
-      <div className='body'>
+      <div>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -41,17 +41,17 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navlayout />
-          <div className="jumbotron">
-            <div style={{
+        <div className="jumbotron jumbotron-fluid">
+          <div style={{
               marginTop: "-5px",
               marginLeft: "40px",
               marginRight: "40px",
-            }}
-            >
-              {children}
-            </div>
+          }}
+          >
+            {children}
           </div>
-          <Footer/>
+        </div>
+        <Footer/>
       </div>
     )}
   />

@@ -6,17 +6,17 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import BlogWrapper from '../components/Wrapper'
 import Content, { HTMLContent } from '../components/Content'
 
-import j1 from "../july/j1.jpg"
-import j2 from "../july/j2.jpg"
-import j3 from "../july/j3.jpg"
-import j4 from "../july/j4.jpg"
-import j5 from "../july/j5.jpg"
-import j7 from "../july/j7.jpg"
-import j8 from "../july/j8.jpg"
-import j9 from "../july/j9.jpg"
-import j10 from "../july/j10.jpg"
-import j11 from "../july/j11.jpg"
-import j6 from "../july/j6.jpg"
+import j1 from "../july/jul29.jpg"
+import j2 from "../july/jul30.jpg"
+import j3 from "../july/jul31.jpg"
+import j4 from "../july/jul28.jpg"
+import j5 from "../july/jul33.jpg"
+import j7 from "../july/jul27.jpg"
+import j8 from "../july/jul32.jpg"
+import j9 from "../july/jul27.jpg"
+import j10 from "../july/jul20.jpg"
+import j11 from "../july/jul24.jpg"
+import j6 from "../july/jul22.jpg"
 
 const arrImages =  [j1, j2, j3, j4, j5, j7, j8, j6, j9, j10, j11]
 export class JulyPhotoShootPageTemplate extends React.Component {

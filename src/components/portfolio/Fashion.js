@@ -9,9 +9,7 @@ const Fashion =  () => (
     <div className="row">
         <div className="col-md-4"> 
             <div className="card" >
-                <a to="portfolio/am-counting-my-blessings">
                     <img className="card-img-top" src={b2} alt="Placeholder image" />
-                </a>
                 <div className="card-body t">
                     <div className="card-text">
                         <p className="title is-4">AM COUNTING MY BLESSINGS</p>
@@ -22,9 +20,7 @@ const Fashion =  () => (
         </div>
         <div className="col-md-4">
             <div className="card"  >
-                <a to="portfolio/am-counting-my-blessings/">
-                    <img className="card-img-top" src={b3} alt="Placeholder image" />
-                </a>
+                <img className="card-img-top" src={b3} alt="Placeholder image" />
                 <div className="card-body t">
                     <div className="card-text">
                         <p className="title is-4">AM COUNTING MY BLESSINGS</p>
@@ -35,9 +31,7 @@ const Fashion =  () => (
         </div>
         <div className="col-md-4">
             <div className="card" >
-                <a to="portfolio/am-counting-my-blessings/">
-                    <img className="card-img-top" src={b4} alt="Placeholder image" />
-                </a>
+                <img className="card-img-top" src={b4} alt="Placeholder image" />
                 <div className="card-body t" >
                     <div className="card-text">
                         <p className="title is-4">AM COUNTING MY BLESSINGS</p>
@@ -50,9 +44,7 @@ const Fashion =  () => (
     <div className="row mt-5">
         <div className="col-md-4">
             <div className="card" >
-                <a to="portfolio/am-counting-my-blessings/">
-                    <img className="card-img-top" src={b6} alt="Placeholder image" />
-                </a>
+                <img className="card-img-top" src={b6} alt="Placeholder image" />
                 <div className="card-body t">
                     <div className="card-text">
                         <p className="title is-4">AM COUNTING MY BLESSINGS</p>

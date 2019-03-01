@@ -4,6 +4,8 @@ path: /news
 title: BETTINAH TIANAH IN NEWS
 heading: Please click !!!!
 ---
+<div class="wrapper">
+
 [Look of the Week (Top 5 Liked Looks on Instagram):
 Cardi B in Christian Siriano, JLo in Versace,
 Hailey Baldwin in Zuhair Murad, And More!  (Fashion bomb daily)](http://fashionbombdaily.com/look-week-top-5-liked-looks-instagram-cardi-b-christian-siriano-jlo-versace-hailey-baldwin-zuhair-murad/)
@@ -39,3 +41,4 @@ Hailey Baldwin in Zuhair Murad, And More!  (Fashion bomb daily)](http://fashionb
 [Bettinah Tianah raises millions in charity drive (sqoop)](http://www.sqoop.co.ug/201811/four-one-one/bettinah-tianah-raises-millions-in-charity-drive.html)
 
 [IMDB Profile (imdb)](https://www.imdb.com/name/nm10172503/)
+</div>

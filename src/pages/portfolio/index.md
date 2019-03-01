@@ -8,4 +8,5 @@ fashion: FASHION
 travel: FASHION AND TRAVEL
 photo: PHOTOGRAPHY
 traits: PORTRAITS
+image: /img/gliter.jpeg
 ---

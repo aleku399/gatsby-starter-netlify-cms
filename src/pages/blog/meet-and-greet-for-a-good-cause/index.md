@@ -3,14 +3,14 @@ templateKey: blog-post
 title: MEET AND GREET FOR A GOOD CAUSE
 path: /blog/meet-and-greet-for-a-good-cause
 description: MEET AND GREET FOR A GOOD CAUSE
-date: 2018-1-10T20:15:10.000Z
+date: 2018-11-9T20:15:10.000Z
 image: /img/meet2.jpeg
 tags:
   - UNCATEGORIZED
   - POST
 ---
 
-<div class='slider'>
+<!-- <div class='slider'>
   <div class='slide1'></div>
   <div class='slide2'></div>
   <div class='slide3'></div>
@@ -25,7 +25,7 @@ tags:
     <i class="fa fa-folder-o"></i>
     <a href="#">Uncategorized</a>
   </div>
-</div>
+</div> -->
 
 On 10th.Nov. 2018 Bettinah Tianah a TV personality, digital marketer, Brand Ambassador is organising her first ever meet and greet.
 

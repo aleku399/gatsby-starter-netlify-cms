@@ -9,9 +9,9 @@ class Show extends React.Component {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      //autoplay: true,
+      //speed: 2000,
+      //autoplaySpeed: 2000,
       cssEase: "linear"
     };
     const slides = this.props.images.map((item, index) => {
@@ -20,7 +20,7 @@ class Show extends React.Component {
           key={index}
         >
           <Img
-            sizes={{...item.node.childImageSharp.sizes,  aspectRatio: 4/3}}
+            fluid={{...item.node.childImageSharp.fluid.src}}
             key={index} 
           />
         </div>

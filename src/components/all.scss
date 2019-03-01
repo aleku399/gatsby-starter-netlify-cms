@@ -1,4 +1,5 @@
 // loads bootstrap and base styles.
+//@import "~font-awesome/css/font-awesome.min.css";
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import './scss/gatstrap.scss';
@@ -11,7 +12,7 @@
 // @import "./css/comments.scss";
 @import "./css/tabs.css";
 @import "./css/light.scss";
-// @import "./css/slider.scss";
+@import "./css/slider.scss";
 @import "./css/path.css";
 @import "./css/tags.css";
 @import "./css/meet.css";
@@ -22,7 +23,7 @@
 @import "./css/jungle.css";
 
 p {
-    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    // font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
     line-height: 24px;
     font-size: 13px;
     font-weight: 300;
@@ -134,15 +135,7 @@ hr {
     background-size: cover;
     height: 50vh;
 }
-#top-area::before {  
-  content: '';
-  position: fixed;
-  left: 0; right: 0; top: 0; bottom: 0;
-  z-index: 1;
-  opacity: 0.9;
-  height: 60vh;  
-  // background-color: rgba(0, 0, 0, 0.65);
-}
+
 
 // .gatsby-resp-image-image {
 //     border: 2px solid yellow;
@@ -175,14 +168,13 @@ hr {
     margin-top: 10px;
 }
 .blogtitle {
-    margin-bottom: "40px";
-    font-size: 18px;
-    font-weight: 50;
+    font-size: 38px;
+    font-weight: 100;
     line-height: 1.2;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: inherit;
+    // font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);   
 } 
 .round {
@@ -206,18 +198,18 @@ hr {
     font-weight: 400;
     color: #333;
     text-transform: uppercase;
-    font-family: inherit;
+    // font-family: inherit;
     line-height: 1.4;
 }
 
-.bli-title a {
+.title a {
     margin: 0;
     font-size: 26px;
     font-weight: 300;
     color: #333;
 }
-bli-meta a {
-    margin: 5px 0 20px 0;
+.article-time {
+    padding-left: 5px;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 400;
@@ -227,4 +219,79 @@ bli-meta a {
 .test {
     border: 1px solid blue;
     height: 40px;
+}
+.carousel {
+    height: 400px;
+    width: 783px;
+}
+
+.bli-info {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.bli-title span {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+    color: #333;
+    text-transform: uppercase;
+    // font-family: inherit;
+    line-height: 1.4;
+}
+.bli-meta  {
+    margin-top: -18px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: #999;
+    justify-content: space-between;
+}
+
+.page-header-cover {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 59vh;
+}
+
+.crumb  {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: #999;
+    border-radius: 0;
+}
+.crumb>li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: #999;
+}
+
+.crumb a {
+   color: #999;
+}
+.jumbotron {
+    padding: 2rem 1rem; 
+    margin-bottom: 0rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+.wrapper p a {
+  color: #987F28;
+  letter-spacing: 1px;   
+}
+.trial {
+    margin-bottom: 20px;
 }

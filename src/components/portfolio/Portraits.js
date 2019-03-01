@@ -11,7 +11,7 @@ const Portraits =  () => (
         <div className="col-md-4 ">
             <div className="card">
                 <div className="card-img-top">
-                    <a to="/portfolio/hair-and-makeup/">
+                    <a href="/portfolio/hair-and-makeup/">
                         <img  src={talk} alt="Placeholder image" />
                     </a>
                 </div>
@@ -23,7 +23,7 @@ const Portraits =  () => (
         </div>
         <div className="col-md-4 ">
             <div className="card">
-            <a to="portfolio/all-that-glitters">
+            <a href="portfolio/all-that-glitters">
                 <img className="card-img-top" src={g1} alt="Placeholder image" />
             </a>
             <div className="card-body t">
@@ -36,7 +36,7 @@ const Portraits =  () => (
         </div>
         <div className="col-md-4 ">
             <div className="card">
-            <a to="/portfolio/hair-and-makeup/">
+            <a href="/portfolio/hair-and-makeup/">
                 <img className="card-img-top" src={a1} alt="Placeholder image" />
             </a>
             <div className="card-body t">
@@ -51,9 +51,7 @@ const Portraits =  () => (
     <div className="row mt-5">
         <div className="col-md-4 ">
             <div className="card">
-                <a to="portfolio/all-that-glitters">
-                    <img className="card-img-top" src={a2} alt="Placeholder image" />
-                </a>
+                <img className="card-img-top" src={a2} alt="Placeholder image" />
                 <div className="card-body t">
                     <div className="card-text">
                         <p className="title is-4">VALENTINE DAY SHOOT</p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import Img from 'gatsby-image'
+import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, img, headi
             <PageContent className="content" content={content} />
         </div>
         <div className="col-md-5 ">
-           {/* <PreviewCompatibleImage imageInfo={img} />  */}
+          {/* <Img fluid={img.childImageSharp.fluid} />  */}
           <img src={betty} alt="about-image" />
         </div>
     </div>
@@ -43,7 +43,7 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         heading={post.frontmatter.heading}
-        // img={post.fromtmatter.image}
+        img={post.frontmatter.image}
       />
     </Layout>
   )

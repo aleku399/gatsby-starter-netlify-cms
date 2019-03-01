@@ -9,38 +9,32 @@ tags:
   - UNCATEGORIZED
   - POST
 ---
-<div class='junger'>
+<!-- <div class='junger'>
   <div class='jung1'></div>
   <div class='jung2'></div>
   <div class='jung3'></div>
-</div>
+</div> -->
 
+Its well known knowledge that a large share of some of
+the non residents who came to this country are driven by what is
+currently termed as poverty porn .
+This trend belittles the significance of the many stunning and monumental places in the country once famously described as the pearl of Africa.
 <div class="j1">
-  <p> <img  src="./k1.jpeg" alt="jungle">
-  Its well known knowledge that a large share of some of
-  the non residents who came to this country are driven by what is
-  currently termed as poverty porn .
-  This trend belittles the significance of the many stunning and monumental places in the country once famously described as the pearl of Africa.
+  <p> <img  src="./j70.jpeg" alt="jungle">
   I postponed my Europe tour so as to exhibit some of Uganda’s beautiful nature and magnificent scenery.
   My first take over was Jinja at the beautiful Kipling lodge a boutique lodge nearly 2 years old located in Kangulumira , surrounded by the beautiful river Nile and its verdant jungle estate which is home to more than a hundred species of birds , vervet , monkeys , iguanas and otter
   </p>
 </div>
 <div class="j2">  
-    <p> <img  src="./k2.jpeg" alt="betty" >
+    <p> <img  src="./j71.jpeg" alt="betty" >
   Its five exclusive cottages each named after a wild animal are breathtaking and so uniquely designed.
   I stayed in one named Gorilla which faces the Nile , what a view it was , the gushing of water , the chirping of birds , one thing for sure , Alex , the lodge owner has an eye of detail he added a Ugandan /African touch ( ankara design ) to everything from the shower , the bathtub outside by the pool, the tree trunks in the compound .
     </p>
 </div>
-<div class="row">
-  <div class="col j3">
-  <p>
+<div  class="j1">
+  <p><img  src="./j65.jpeg" alt="betty">
   And oh If you are foodie , you don’t have to worry about missing home food , the Kipling lodge should be your spot , such an amazing chef , I am on diet at the moment but was swayed into having everything that was prepared from Baloo’s kitchen ,from the mouth watering steak to the fresh dessert , for a second I was considering taking cooking lessons during my stay at the lodge.
   </p>
-  <img  src="./k3.jpeg" alt="betty">
-  </div>
-  <div class="col">
-    <img  src="./k4.jpeg" alt="betty">
-  </div>
 </div>
 <div class="mt-4 row container">
   <p>
@@ -53,17 +47,17 @@ tags:
 </div>
 <div class="row ">
   <div class="col">
-     <img  src="./k6.jpg" alt="Placeholder image" />
+     <img  src="./j62.jpg" alt="Placeholder image" />
   </div>
   <div class="col">
-   <img  src="./k9.jpg" alt="Placeholder image" />
+   <img  src="./j59.jpg" alt="Placeholder image" />
   </div>
 </div>
-<div class="row">
+<div class="mt-5 row">
   <div class="col">
-   <img  src="./k8.jpg" alt="Placeholder image" />
+   <img  src="./j60.jpg" alt="Placeholder image" />
   </div>
   <div class="col">
-   <img  src="./k5.jpg" alt="Placeholder image" />
+   <img  src="./j63.jpg" alt="Placeholder image" />
   </div>
 </div>
