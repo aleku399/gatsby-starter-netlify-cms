@@ -39,57 +39,60 @@ const BlogWrapper = ({ children, img, title, slug, post }) => (
           
         </Helmet>
         <Navlayout />
-        <main role="main" style={{backgroundColor: "#F1F1F1", paddingBottom: "15px",}}>
-          <div className="bg jumbotron jumbotron-fluid"
-             style={{ backgroundImage: `url(${
-              !!img.childImageSharp
-              ? img.childImageSharp.fluid.src
-              : img
-            })` }}
-          >
-            <div className="cover page-header-cover"></div> 
-            <div style={{textAlign: "center", margin: "60px"}}>
-              <h1  className="blogtitle" >
-                {title}
-              </h1>
-              <ol className="crumb">              
-                <li>  
-                  <Link to ="/">
-                    HOME 
-                  </Link>
-                </li>
-                <span className="crumb-separator">   /  </span>
-                <li>
-                  <Link to ="/">
-                    PORTFOLIO 
-                  </Link>
-                </li>
-                <span className="crumb-separator">  /  </span>
-                <li>
-                <Link to ="/">
-                    {post} 
-                  </Link>
-                </li>
-                <span className="crumb-separator">  /  </span>
-                <li>
-                  <Link to={slug}> 
-                    {title}
-                  </Link> 
-                </li>
-              </ol>
+        <div id="body-content">
+          <section id="page-header-section" class="alter-heading">
+            <div
+              className="page-header-image parallax bg-image"
+              style={{
+                // top: "97.2px",
+                backgroundImage: `url(${
+                !!img.childImageSharp
+                ? img.childImageSharp.fluid.src
+                : img
+              })` }}
+            >
             </div>
-          </div>
-          <div
-
-            style={{
-              marginLeft: "10px",
-              marginRight: "10px",
-            }}
-          >
+            <div className="cover page-header-cover"></div>
+            <div className="container page-header-content no-padding max-width text-center">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h1 className="album-title">{title}</h1>
+                  <ol className="crumb">              
+                    <li>  
+                      <Link to ="/">
+                        HOME 
+                      </Link>
+                    </li>
+                    <span className="crumb-separator">   /  </span>
+                    <li>
+                      <Link to ="/portfolio">
+                        PORTFOLIO 
+                      </Link>
+                    </li>
+                    <span className="crumb-separator">  /  </span>
+                    <li>
+                    <Link to ="/">
+                        {post} 
+                      </Link>
+                    </li>
+                    <span className="crumb-separator">  /  </span>
+                    <li>
+                      <Link to={slug}> 
+                        {title}
+                      </Link> 
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="content-section" class="page">
+            <div className="container max-width-1300" >
               {children}
-          </div>
-        </main>
-        <Footer />
+            </div>
+          </section>
+          <Footer />
+        </div>
       </div>
     )}
   />

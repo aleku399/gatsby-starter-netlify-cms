@@ -6,8 +6,7 @@
     margin: 0 4px 0 0;
   }
   .tag {
-    color: white;
-    background: purple;
+    color: #999;
     font-size: 11px;
     text-transform: uppercase;
     font-weight: bold;
@@ -17,4 +16,17 @@
     line-height: 12px;
     font-family: 'Rajdhani', cursive;
     text-decoration: none;
+}
+
+.tag:hover {
+  color: black;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 3px;
+  border-radius: 35px;
+  padding: 5px 12px;
+  line-height: 12px;
+  font-family: 'Rajdhani', cursive;
+  text-decoration: none;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import g1 from "../../../static/img/g1.jpeg";
 import a1 from "../../../static/img/about.jpeg";
 import a2 from "../../../static/img/about2.jpeg";
@@ -9,55 +9,57 @@ const Portraits =  () => (
 <div>
     <div className="row">
         <div className="col-md-4 ">
-            <div className="card">
-                <div className="card-img-top">
-                    <a href="/portfolio/hair-and-makeup/">
+            <div className="album-list-item">
+                <Link className="ali-link" to="portfolio/hair-and-makeup">
+                    <div className="ali-img-wrap">
                         <img  src={talk} alt="Placeholder image" />
-                    </a>
-                </div>
-                <div className="card-body t">
-                    <p className="title is-4">HAIR AND MAKE UP</p>
-                    <p className="subtitle is-6">PORTRAITS</p>
-                </div> 
+                    </div>
+                    <div className="ali-caption">
+                        <h2 className="ali-title">HAIR AND MAKE UP</h2>
+                        <div className="ali-meta">PORTRAITS</div>
+                    </div>
+                </Link> 
             </div>
         </div>
         <div className="col-md-4 ">
-            <div className="card">
-            <a href="portfolio/all-that-glitters">
-                <img className="card-img-top" src={g1} alt="Placeholder image" />
-            </a>
-            <div className="card-body t">
-                <div className="card-text">
-                    <p className="title is-4">ALL THAT GLITTERS</p>
-                    <p className="subtitle is-6">CREATIVE - PORTRAITS</p>
-                </div>
-            </div>
+            <div className="album-list-item">
+                <Link className="ali-link" to="portfolio/all-that-glitters-1">
+                    <div className="ali-img-wrap">
+                        <img  src={g1} alt="Placeholder image" />
+                    </div>
+                    <div className="ali-caption">
+                        <h2 className="ali-title">ALL THAT GLITTERS</h2>
+                        <div className="ali-meta">CREATIVE - PORTRAITS</div>
+                    </div>
+                </Link>
             </div>
         </div>
         <div className="col-md-4 ">
-            <div className="card">
-            <a href="/portfolio/hair-and-makeup/">
-                <img className="card-img-top" src={a1} alt="Placeholder image" />
-            </a>
-            <div className="card-body t">
-                <div className="card-text">
-                    <p className="title is-4">VALENTINE DAY PORTRAIT</p>
-                    <p className="subtitle is-6">PORTRAITS</p>
-                </div>
-            </div>
+            <div className="album-list-item">
+                <Link className="ali-link"  to="portfolio/valentine-shoot">
+                    <div className="ali-img-wrap">
+                        <img className="card-img"  src={a1} alt="Placeholder image" />
+                    </div>
+                    <div className="ali-caption">
+                        <h2 className="ali-title">VALENTINE DAY PORTRAIT</h2>
+                        <div className="ali-meta">PORTRAITS</div>
+                    </div>
+                </Link>
             </div>
         </div>
     </div>
     <div className="row mt-5">
         <div className="col-md-4 ">
-            <div className="card">
-                <img className="card-img-top" src={a2} alt="Placeholder image" />
-                <div className="card-body t">
-                    <div className="card-text">
-                        <p className="title is-4">VALENTINE DAY SHOOT</p>
-                        <p className="subtitle is-6">PORTRAITS</p>
+            <div className="album-list-item">
+                <Link className="ali-link" to="portfolio/valentine-shoot">
+                    <div className="ali-img-wrap">
+                        <img className="card-img-top" src={a2} alt="Placeholder image" />
                     </div>
-                </div>
+                    <div className="ali-caption">
+                        <h2 className="ali-title">VALENTINE DAY SHOOT</h2>
+                        <div className="ali-meta">PORTRAITS</div>
+                    </div>
+                </Link>
             </div>
         </div>
     </div>

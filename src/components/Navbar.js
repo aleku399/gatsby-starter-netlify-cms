@@ -38,30 +38,30 @@ const Navlayout = class extends React.Component {
   
   <Navbar  className="navigation__navbar" color="white" expand="md" sticky="top">
     <NavbarBrand>
-      <Link className="navbar-brand" to="/" activeClassName="active" title="bettinah">
+      <Link className="navbar-brand" to="/"  activeStyle={{ color: "black" }} title="bettinah">
           BETTINAH TIANAH
       </Link>
     </NavbarBrand>
-    <NavbarToggler onClick={this.toggleNavbar} />
+    <NavbarToggler className="custom-toggler" onClick={this.toggleNavbar} />
     <Collapse isOpen={!this.state.collapsed} navbar>
       <Nav className="ml-auto" navbar>
           <NavItem>
-            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar} activeClassName="active"  to="/about">
+            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeStyle={{ color: "black" }}  to="/about">
                 ABOUT ME
             </Link>
           </NavItem>
           <NavItem>
-            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeClassName="active" to="/contact">
+            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeStyle={{ color: "black" }} to="/contact">
                 CONTACT
               </Link>
           </NavItem>
           <NavItem>
-            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeClassName="active" to="/portfolio">
+            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar} activeStyle={{ color: "black" }} to="/portfolio">
                 PORTFOLIO
             </Link>
           </NavItem>
           <NavItem>
-            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeClassName="active" to="/news">
+            <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeStyle={{ color: "black" }} to="/news">
                 BETTINAHTIANAH NEWS
             </Link>
           </NavItem>

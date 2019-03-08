@@ -11,9 +11,9 @@ const typography = new Typography({
     //     "sans-serif",
     //   ],
     bodyFontFamily: ["Georgia", "serif"],
-    baseLineHeight: "24px",
-    bodyWeight: "300",
-    letterSpacing: "3px",
+    // baseLineHeight: "24px",
+    // bodyWeight: "300",
+    // letterSpacing: "3px",
 })
 
 export default typography

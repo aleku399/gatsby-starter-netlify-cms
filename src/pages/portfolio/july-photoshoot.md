@@ -1,29 +1,30 @@
 ---
 templateKey: 'july-photoshoot'
 path: /july-photoshoot
-title: ABOUT PROJECT
+title: JULY PHOTOSHOOT
+description: ABOUT PROJECT
 author:  BETTINAHTIANAH
-image1: /img/j1.jpg
-image2: /img/j2.jpg
-image3: /img/j3.jpg
-image4: /img/j4.jpg
-image5: /img/j5.jpg
-image6: /img/j6.jpg
-image7: /img/j7.jpg
-image8: /img/j8.jpg
-image9: /img/j9.jpg
-image10: /img/j10.jpg
-image11: /img/j11.jpg
+image: /img/j4.jpg
 ---
-
-> Photographer – 
-> @the_256photographer
-
-> Makeup – @shillat_mua
-
->Brands – @zar_ug ,
->@missguided, @asos
->,@fashionnova,
->@mrpfashion 
->, @babyroz_boutique,
->@missm_intimates
+<div class="album-description margin-top-20">
+    <div class="al-desc-inner">
+        <p>
+            Photographer –
+            <a href="https://www.instagram.com/the_256photographer" target="_blank" rel="noopener">@the_256photographer</a>  
+        </p>
+        <p>
+            Makeup –
+            <a href="https://www.instagram.com/shillat_mua" target="_blank" rel="noopener"> @shillat_mua</a>
+        </p>
+        <p>
+            Brands –
+            <a href="https://www.instagram.com/zar_ug" target="_blank" rel="noopener">@zar_ug</a>
+            <a href="https://www.instagram.com/missguided" target="_blank" rel="noopener">@missguided</a>
+            <a href="https://www.instagram.com/asos" target="_blank" rel="noopener">@asos</a>
+            <a href="https://www.instagram.com/fashionnova" target="_blank" rel="noopener">fashionnova</a>
+            <a href="https://www.instagram.com/mrpfashion " target="_blank" rel="noopener">@mrpfashion </a>
+            <a href="https://www.instagram.com/babyroz_boutique" target="_blank" rel="noopener">babyroz_boutique</a>
+            <a href="https://www.instagram.com/missm_intimates" target="_blank" rel="noopener"> @missm_intimates</a>
+        </p>
+    </div>
+</div>

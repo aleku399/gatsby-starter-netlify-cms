@@ -8,7 +8,7 @@ import Portraits from './Portraits';
 
 function Portfolio() {
   return (
-    <div>
+    <div className="col-md-12">
       <Tabs>
         <div label="CREATIVE" className="col ">
           <Creative />

@@ -11,7 +11,9 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
     console.log(data)
     return (
-      <Layout>
+    <Layout>
+      <div className="container">
+        <div className="content-wrap">
           <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
           <div className="blog-posts">
             {posts
@@ -21,10 +23,10 @@ export default class IndexPage extends React.Component {
               <div
                 className={`blog-post-preview ${
                 index % 2 !== 0 ? 'inverse' : ''
-                }`}
+                } row`}
                 key={post.id}
               >
-              <div className="post-info">
+              <div className="post-info col-md-4 col-sm-6">
                 <h1 className="title">
                   <Link to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -43,12 +45,14 @@ export default class IndexPage extends React.Component {
               </Link>
             </div>
           </div>
-         <div className="post-img">
+         <div className="post-img col-md-4 col-sm-6">
            <PreviewCompatibleImage imageInfo={post.frontmatter.image} alt="image" />
          </div>
        </div>
       );
     })}
+    </div>
+    </div>
    </div>     
   </Layout>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import BlogWrapper from '../components/Wrapper'
+import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -11,21 +11,22 @@ export const HairAndMakeupPageTemplate = ({ title, content, contentComponent, im
   const PageContent = contentComponent || Content
 
   return (
-  <div className="allan">
     <div className="row">
-      <div className="col-md-4">        
-              <h3 className="">
-                {title}
-              </h3>
-              <h6>{author}</h6>
-              <PageContent className="content" content={content} />
+      <div className="col-left col-md-4 col-lg-3 f-height">
+        <div className="portfolio-info">
+          <h1 class="portfolio-title">{title}:</h1>
+          <div className="author" style={{display: "flex", flexDirection: "row", }}>
+            <img  className="nd author-avatar" src={img.childImageSharp.fluid.src}  />
+            <a href="#" className="author-info"> - AUTHOR: {author}</a>
+          </div>
+          <PageContent className="content" content={content} />
+        </div>        
       </div>
-      <div className="col-md-8">
-          <img src={betty} alt={betty} width={1000}/>
+      <div className="col-right col-md-8 col-lg-9">
+        <img src={betty} alt="make" className="img-responsive frame"/>
         {/* <PreviewCompatibleImage imageInfo={img} /> */}
       </div>
     </div>
-  </div>
   )
 }
 
@@ -41,7 +42,7 @@ const HairAndMakeupPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={betty}>
+    <CoverWrapper img={betty} title="HAIR AND MAKEUP" post="POST">
       <HairAndMakeupPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -49,7 +50,7 @@ const HairAndMakeupPage = ({ data }) => {
         img={post.frontmatter.image}
         author={post.frontmatter.author}
       />
-    </BlogWrapper>
+    </CoverWrapper>
   )
 }
 

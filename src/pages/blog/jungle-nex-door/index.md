@@ -9,12 +9,6 @@ tags:
   - UNCATEGORIZED
   - POST
 ---
-<!-- <div class='junger'>
-  <div class='jung1'></div>
-  <div class='jung2'></div>
-  <div class='jung3'></div>
-</div> -->
-
 Its well known knowledge that a large share of some of
 the non residents who came to this country are driven by what is
 currently termed as poverty porn .
@@ -46,18 +40,18 @@ This trend belittles the significance of the many stunning and monumental places
   </p>
 </div>
 <div class="row ">
-  <div class="col">
+  <div class="col-md-4">
      <img  src="./j62.jpg" alt="Placeholder image" />
   </div>
-  <div class="col">
+  <div class="col-md-4">
    <img  src="./j59.jpg" alt="Placeholder image" />
+  </div>
+  <div class="col-md-4">
+   <img  src="./j60.jpg" alt="Placeholder image" />
   </div>
 </div>
 <div class="mt-5 row">
-  <div class="col">
-   <img  src="./j60.jpg" alt="Placeholder image" />
-  </div>
-  <div class="col">
+  <div class="col-md-4">
    <img  src="./j63.jpg" alt="Placeholder image" />
   </div>
 </div>

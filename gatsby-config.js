@@ -70,15 +70,16 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 450,
+              maxHeight: 550,
               quality: 100,
             },
           },
-          {
-            resolve: `gatsby-plugin-typography`,
-            options: {
-              pathToConfigModule: `src/utils/typography.js`,
-            },
-          },
+          // {
+          //   resolve: `gatsby-plugin-typography`,
+          //   options: {
+          //     pathToConfigModule: `src/utils/typography.js`,
+          //   },
+          // },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {

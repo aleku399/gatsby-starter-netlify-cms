@@ -8,17 +8,37 @@ export const NewsPageTemplate = ({ title, content, contentComponent, heading }) 
   const PageContent = contentComponent || Content
 
   return (
-    <section className="alex">
-      <div>
-          <h4 className="line">{title}</h4>
-        <div>
-          <div className="trial">
-            <strong>{heading}</strong>
-          </div>
-          <PageContent  content={content} />
+  <div>
+    <div className="container">
+      <div className="content-wrap">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="vd_column-inner">
+              <div className="wpb_wrapper">
+                <h4 className="line">{title}</h4>
+              </div>
+            </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+    <div className="container">
+      <div className="content-wrap">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="vc_column-inner">
+              <div className="wbp_wrapper">
+                <div className="wpb_text_column wbp_content_element">
+                  <p><strong>{heading}</strong></p>
+                  <PageContent  content={content} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   )
 }
 

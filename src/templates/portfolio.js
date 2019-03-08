@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
-import BlogWrapper from '../components/Wrapper'
+import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
 import Portfolio from '../components/portfolio'
 // import TabsPage from '../components/portfolio/Try'
@@ -17,7 +17,7 @@ export const PortfolioPageTemplate = ({
     traits, }) => {
   
   return (
-  <div  className="allan">
+  <div  className="row">
     <Portfolio  />
   </div>
   )
@@ -35,7 +35,7 @@ const PortfolioPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={betty} >
+    <CoverWrapper img={betty} title="PORTFOLIO" post="POST">
       <PortfolioPageTemplate
         all={post.frontmatter.all}
         creative={post.frontmatter.creative}
@@ -44,7 +44,7 @@ const PortfolioPage = ({ data }) => {
         photo={post.frontmatter.photo}
         traits={post.frontmatter.traits}
       />
-    </BlogWrapper>
+    </CoverWrapper>
   )
 }
 

@@ -6,9 +6,9 @@ import Img from 'gatsby-image'
 import {FaArrowCircleRight, FaArrowCircleLeft} from 'react-icons/fa';
 
 const ProjectPagination = ({ next, prev }) => (
-  <div className="row ex">
+  <div className="row">
     {prev && (
-      <div className="col">
+      <div className="col-sm-6">
         <Link to={prev.fields.slug}>
             <div className="pag"  style={{display: "flex", flexDirection: "row"}}>
               <img  className="round" src={prev.frontmatter.image.childImageSharp.fluid.src}  />
@@ -22,7 +22,7 @@ const ProjectPagination = ({ next, prev }) => (
     )}
 
     {next && (
-      <div className="col">
+      <div className="col-sm-6 text-right">
         <Link to={next.fields.slug}>
           <div className="pag"  style={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}>
               <div style={{display: "flex", flexDirection: "column", color: "#333",  margin: "10px"}}>

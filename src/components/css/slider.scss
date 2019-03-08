@@ -1,53 +1,10 @@
-.slider {
-  position: relative;
+.carousel {
+  height: 400px;
   width: 783px;
-  height: 440px;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-bottom: 30px;
 }
 
-.slider-wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.slide {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.arrow {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform ease-in .1s;
-}
-
-.nextArrow {
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  z-index: 999;
-  color: #fff;
-}
-
-.backArrow {
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  z-index: 999;
-  color: #fff;
-}
-
-.fa-arrow-right:before, .fa-arrow-left:before {
-  color: #222
-}
-
+// @media (min-width: 992px) {
+//   .carousel {
+//       width:  268px;
+//     }
+// }

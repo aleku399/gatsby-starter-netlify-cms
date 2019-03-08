@@ -19,35 +19,54 @@ export default class Insta extends React.Component {
    // const { edges: posts } = data.allMarkdownRemark
 
     return (
-    <div className="container">
-        <div className="item">
-            <img src={s7} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s8} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s10} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s1} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s2} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s3} alt="betty"/>
-        </div>    
-        <div className="item">
-            <img src={s4} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s5} alt="betty"/>
-        </div>
-        <div className="item">
-            <img src={s6} alt="betty"/>
-        </div>
-    </div>
+    <ul>
+        <li>
+            <a href="#">
+                <img src={s7} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s8} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s10} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s1} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s2} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s3} alt="betty"/>
+            </a>
+        </li>    
+        <li>
+            <a href="#">
+                <img src={s4} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s5} alt="betty"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src={s6} alt="betty"/>
+            </a>
+        </li>
+    </ul>
     )
   }
 }
+

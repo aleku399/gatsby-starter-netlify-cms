@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Img } from 'gatsby'
-import BlogWrapper from '../components/Wrapper'
+import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -11,26 +11,22 @@ export const GlamourPageTemplate = ({ title, content, contentComponent, img, aut
   const PageContent = contentComponent || Content
 
   return (
-  <div className="allan">
-
-    <div className="row">
-      <div className="col-md-4">
-        <div className="media-content">
-            <div className="content">
-              <h3 className="">
-                {title}
-              </h3>
-              <h6>{author}</h6>
-              <PageContent className="content" content={content} />
-            </div>
+  <div className="row">
+    <div className="col-left col-md-4 col-lg-3 f-height">
+      <div className="porfolio-info">
+        <div className="portfolio-info-inner">
+          <h1 class="portfolio-title">{title}:</h1>
+          <div className="author" style={{display: "flex", flexDirection: "row", }}>
+            <img  className="nd author-avatar" src={img.childImageSharp.fluid.src}  />
+            <a href="#" className="author-info"> - AUTHOR: {author}</a>
+          </div>
+          <PageContent  content={content} />
         </div>
       </div>
-      <div className="col-md-8">
-        {/* <figure className="media-right">
-          <img src={betty} alt={betty} width={1000}/>
-        </figure> */}
-        <PreviewCompatibleImage imageInfo={img} />  
-      </div>
+    </div>
+    <div className="col-right col-md-8 col-lg-9">
+        {/* <img src={betty} alt="All that Glitters" className="img-responsive"/> */}
+      <PreviewCompatibleImage imageInfo={img} />  
     </div>
   </div>
   )
@@ -48,7 +44,7 @@ const GlamourPage = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <BlogWrapper img={post.frontmatter.image}>
+    <CoverWrapper img={post.frontmatter.image} title="GLAMOUR" post="POST">
       <GlamourPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -56,7 +52,7 @@ const GlamourPage = ({ data }) => {
         img={post.frontmatter.image}
         author={post.frontmatter.author}
       />
-    </BlogWrapper>
+    </CoverWrapper>
   )
 }
 

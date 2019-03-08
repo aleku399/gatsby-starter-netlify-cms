@@ -12,17 +12,38 @@ export const AboutPageTemplate = ({ title, content, contentComponent, img, headi
   const PageContent = contentComponent || Content
 
   return (
-     <div className="row alex">
-        <div className="col-md-7">
-            <h3>{title}</h3>
-            <h6>{heading}</h6>
-            <PageContent className="content" content={content} />
+    <div className="container">
+      <div className="content-wrap">
+        <div className="row">
+          <div className="col-md-8">
+            <div className="vc_column-inner">
+              <div className="wpb_wrapper">
+                <div className="wbp_text_column wbp_content_element">
+                  <div className="wbp_wrapper">
+                    <h3>{title}</h3>
+                    <h6>{heading}</h6>
+                    <PageContent className="content" content={content} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4" >
+            <div className="vc_column-inner">
+              <div className="wpb_wrapper">  
+                <div className="wbp_single_image wbp_content_element vc_align_left">
+                  <figure className="wpb_wrapper vc_figure">
+                    <div className="vc_single_image_wrapper vc_box_border_grey">
+                      <img className="single" src={betty} alt="about-image" width="755" height="1048"/>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-md-5 ">
-          {/* <Img fluid={img.childImageSharp.fluid} />  */}
-          <img src={betty} alt="about-image" />
-        </div>
-    </div>
+      </div>
+  </div>
   )
 }
 

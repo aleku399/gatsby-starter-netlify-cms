@@ -56,18 +56,13 @@ It was fresh with a taste so delicious .
         </p>
   </div>
   <div class="mt-5 row">
-    <div class="col">
+   <div class="col-md-4">
       <img src="./p21.jpg" alt="pine"/>
     </div>
-    <div class="col">
-      <img src="./p21.jpg" alt="pine"/>
-    </div>
-  </div>
-  <div class="mt-5 row">
-    <div class="col">
+     <div class="col-md-4">
         <img src="./p30.jpg" alt="pine"/>
     </div>
-    <div class="col">
+    <div class="col-md-4">
         <img src="./p20.jpeg" alt="pine"/>
     </div>
   </div>

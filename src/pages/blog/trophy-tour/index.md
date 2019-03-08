@@ -15,13 +15,13 @@ So you can imagine my excitement when I was contacted by Coca-Cola Africa  — t
 
 I was ecstatic and overjoyed that my dream was actually coming true. And the cherry on top of the cake was that we would be returning from Cape Town to Uganda aboard the Coca Cola-FIFA World Cup
 <div class="row">
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour1.jpeg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour2.jpg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
      <img src="./tour3.jpg" alt="tour">
   </div>
 </div>
@@ -31,13 +31,13 @@ I was ecstatic and overjoyed that my dream was actually coming true. And the che
   </p>
 </div>
 <div class="row">
-  <div class="col">
+  <div class="col-md-4">
      <img src="./tour5.jpg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
     <img src="./tour8.jpg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour17.jpg" alt="tour">
   </div>
 </div>
@@ -50,13 +50,13 @@ I was ecstatic and overjoyed that my dream was actually coming true. And the che
   </p>
 </div>
 <div class="row">
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour7.jpeg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour9.jpeg" alt="tour">
   </div>
-  <div class="col">
+  <div class="col-md-4">
    <img src="./tour19.jpg" alt="tour">
   </div>
 </div>
@@ -67,13 +67,13 @@ I was ecstatic and overjoyed that my dream was actually coming true. And the che
     </p>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-md-4">
     <img src="./tour20.jpg" alt="tour">
     </div>
-    <div class="col">
+    <div class="col-md-4">
      <img src="./tour21.jpg" alt="tour">
     </div>
-     <div class="col">
+     <div class="col-md-4">
       <img src="./tour24.jpg" alt="tour">
     </div>
   </div>
@@ -89,13 +89,13 @@ I was ecstatic and overjoyed that my dream was actually coming true. And the che
   </p>
 </div>
   <div class="row">
-    <div class="col">
+    <div class="col-md-4">
     <img src="./tour16.jpg" alt="tour">
     </div>
-    <div class="col">
+    <div class="col-md-4">
     <img src="./tour15.jpg" alt="tour">
     </div>
-    <div class="col">
+    <div class="col-md-4">
     <img src="./tour12.jpg" alt="tour">
     </div>
   </div>  
