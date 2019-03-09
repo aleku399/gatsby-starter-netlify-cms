@@ -1,0 +1,150 @@
+.author {
+    display: block;
+    position: relative;
+}
+.author-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(132, 132, 132, 0.1);
+    border-radius: 50%;
+}
+
+/* // .author-avatar + .author-info {
+//     position: relative;
+//     // top: -12px;
+// } */
+
+.author-info {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    /* // padding: 5px; */
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    color: #999;
+}
+
+.sugar {
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.sugar img {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    vertical-align: middle;
+    left: 50%;
+    transform: translate(-50%);
+    height: 150px;
+    width: 253px;
+    object-fit:cover;    
+}
+.portfolio-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 4px;
+}
+
+.album-list-item {
+    position: relative;
+}
+
+.album-list-item .ali-link {
+    display: block;
+    text-decoration: none;
+}
+
+.album-list-item .ali-img-wrap {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.ali-img-wrap img {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    vertical-align: middle;
+    left: 50%;
+    transform: translate(-50%);
+    height: 257.39px;
+    width: 381.33px;
+    object-fit:cover;
+}
+
+.album-list-item .ali-caption {
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    padding: 5% 7% 4% 7%;
+    text-align: center;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.album-list-item .ali-caption:hover {
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    padding: 5% 7% 4% 7%;
+    text-align: center;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.album-list-item .ali-title {
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.album-list-item .ali-meta {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    color: #666;
+}
+
+.al-desc-inner {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.al-desc-inner a {
+    text-decoration: none;
+    color: #987F28;
+    outline: none;
+}

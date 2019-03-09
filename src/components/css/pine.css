@@ -1,0 +1,162 @@
+.piner {
+    position: relative;
+    max-width: 783px;
+    height: 440px;
+    margin-bottom: 30px;
+}
+.pine1,.pine2,.pine3,.pine4,.pine5,.pine4,.pine6,.pine7,.pine8,.pine9,.pine10,.pine11 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.pine1 {
+    background: url(../../img/about.jpeg)no-repeat;
+    background-size: 100%;
+      animation:fade 8s infinite;
+  -webkit-animation:fade 8s infinite;
+  
+} 
+.pine2 {
+    background: url(../../img/green.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade2 8s infinite;
+  -webkit-animation:fade2 8s infinite;
+}
+.pine3 {
+      background: url(../../img/meet2.jpeg)no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      animation:fade3 8s infinite;
+  -webkit-animation:fade3 8s infinite;
+}
+.pine4 {
+    background: url(../../img/b2.jpg)no-repeat;
+    background-size: 100%;
+      animation:fade4 8s infinite;
+  -webkit-animation:fade4 8s infinite;
+  
+} 
+.pine5 {
+    background: url(../../img/glam1.jpeg)no-repeat center;
+        background-size: cover;
+      animation:fade5 8s infinite;
+  -webkit-animation:fade5 8s infinite;
+}
+.pine6 {
+      background: url(../../img/gliter.jpeg)no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      animation:fade6 8s infinite;
+  -webkit-animation:fade6 8s infinite;
+}
+.pine7 {
+    background: url(../../img/ocean.jpg)no-repeat;
+    background-size: 100%;
+      animation:fade7 8s infinite;
+  -webkit-animation:fade7 8s infinite;
+  
+} 
+.pine8 {
+    background: url(../../img/sit.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade8 8s infinite;
+  -webkit-animation:fade8 8s infinite;
+}
+.pine9 {
+      background: url(../../img/tub.jpg)no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      animation:fade9 8s infinite;
+  -webkit-animation:fade9 8s infinite;
+}
+.pine10 {
+    background: url(../../img/j1.jpg)no-repeat;
+    background-size: 100%;
+      animation:fade10 8s infinite;
+  -webkit-animation:fade10 8s infinite;
+  
+} 
+.pine11 {
+    background: url(../../img/red.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade11 8s infinite;
+  -webkit-animation:fade11 8s infinite;
+}
+
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+  @keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+@keyframes fade4
+{
+    0%   {opacity:1}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade5
+{
+    0%   {opacity:1}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+  @keyframes fade6
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+@keyframes fade7
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade8
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+  @keyframes fade9
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+@keyframes fade10
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade11
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
