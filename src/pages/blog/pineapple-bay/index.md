@@ -59,10 +59,10 @@ It was fresh with a taste so delicious .
    <div class="col-md-4">
       <img src="./p21.jpg" alt="pine"/>
     </div>
-     <div class="col-md-4">
-        <img src="./p30.jpg" alt="pine"/>
+    <div class="col-md-4">
+      <img src="./p30.jpg" alt="pine"/>
     </div>
     <div class="col-md-4">
-        <img src="./p20.jpeg" alt="pine"/>
+      <img src="./p20.jpeg" alt="pine"/>
     </div>
   </div>

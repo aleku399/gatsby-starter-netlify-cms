@@ -1,10 +1,12 @@
-.carousel {
-  height: 400px;
-  width: 783px;
+@media (min-width: 992px) {
+  .carousel {
+    height: 400px;
+    width: 783px;
+    }
 }
 
 // @media (min-width: 992px) {
 //   .carousel {
-//       width:  268px;
+//     height: 200px;
 //     }
 // }

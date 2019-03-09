@@ -1,14 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 // import { DiscussionEmbed } from "disqus-react";
 import {FaFolder, FaClock} from 'react-icons/fa';
 import BlogWrapper from '../components/Wrapper'
 import Slider from '../components/slider'
-import  Carousel from '../components/slider/Carousel'
-import  Show from '../components/slider/Show'
 import PostLink from "../components/Post-link"
 import Content, { HTMLContent } from '../components/Content'
 import ProjectPagination from "../components/ProjectPagination"
@@ -29,11 +26,11 @@ export const BlogPostTemplate = ({
   prev,
 }) => {
   const PostContent = contentComponent || Content
-  const disqusShortname = " http-localhost-8000-XKdULE3kTi.disqus.com"
-  const disqusConfig = {
-    identifier: id,
-    title: title,
-  }
+  // const disqusShortname = " http-localhost-8000-XKdULE3kTi.disqus.com"
+  // const disqusConfig = {
+  //   identifier: id,
+  //   title: title,
+  // }
 
   return (
     <div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Img } from 'gatsby'
+import { graphql } from 'gatsby'
 import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-import betty from "../../static/img/z1.jpeg"
+// import betty from "../../static/img/z1.jpeg"
 
 export const ZanzibarTalesInterior1PageTemplate = ({ title, content, contentComponent, img, author }) => {
   const PageContent = contentComponent || Content
@@ -44,7 +44,7 @@ const  ZanzibarTalesInterior1Page = ({ data }) => {
   const { markdownRemark: post } = data
   console.log(data)
   return (
-    <CoverWrapper img={betty} title={post.frontmatter.heading} post="POST">
+    <CoverWrapper img={post.frontmatter.image} title={post.frontmatter.heading} post="POST">
       <ZanzibarTalesInterior1PageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

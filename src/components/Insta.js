@@ -1,7 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
 
 import  s1 from "../../static/img/insta1.jpg"
 import s2 from "../../static/img/insta2.jpg"
