@@ -32,9 +32,9 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: Lint
-          command: yarn lint
+      # - run:
+      #     name: Lint
+      #     command: yarn lint
       - run:
           name: Building application
           command: yarn build
