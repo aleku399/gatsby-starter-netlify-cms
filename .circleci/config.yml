@@ -39,8 +39,8 @@ jobs:
           name: Building application
           command: yarn build
       # run tests!
-      - run: 
-          name: Testing application 
-          command: yarn test
+      # - run: 
+      #     name: Testing application 
+      #     command: yarn test
         
  
