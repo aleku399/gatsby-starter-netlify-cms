@@ -3,6 +3,9 @@
 //  @import "~slick-carousel/slick/slick-theme.css";
 // @import './scss/gatstrap.scss';
 // @import './scss/colors.scss';
+// @import '@fortawesome/fontawesome-free/css/all.min.css';
+// @import 'bootstrap-css-only/css/bootstrap.min.css';
+// @import 'mdbreact/dist/css/mdb.css';
 @import "./css/line.css";
 @import "./css/gallery.scss";
 // @import "./css/comments.scss";
@@ -61,12 +64,12 @@ html, body {
     color: black;
 }
 
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 991;
-}
+// .sticky-top {
+//     position: -webkit-sticky;
+//     position: sticky;
+//     top: 0;
+//     z-index: 991;
+// }
 // .content, .taglist {
 //   list-style: none;
 //   margin-bottom: 0;
@@ -97,7 +100,8 @@ html, body {
 //     margin-right: 0;
 // }
 .gatsby-resp-image-link {
-   width: 300px;
+   width: 244px;
+   padding: 13px;
 }
 .yk {
     display: flex;
@@ -409,8 +413,8 @@ section {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.page {
-    margin-top: 61px;
+.alter-heading {
+    top: 61px;
 }
 
 @media (min-width: 992px) {
@@ -682,7 +686,7 @@ li {
 }
 
 #page-header-section + #content-section {
-    margin-top: -80px;
+    // margin-top: -80px;
     z-index: 2;
 }
 
@@ -695,7 +699,7 @@ li {
 }
 
 #page-header-secion + #content-section {
-    margin-top: -80px;
+    // margin-top: -32px;
     z-index: 2;
 }
 

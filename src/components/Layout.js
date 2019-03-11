@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
         }
     `}
     render={data => (
-      <div>
+      <div style={{backgroundColor: " #F1F1F1"}}>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
