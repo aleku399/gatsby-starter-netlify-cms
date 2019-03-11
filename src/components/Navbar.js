@@ -35,7 +35,7 @@ const Navlayout = class extends React.Component {
  render() {
    return (
   
-  <Navbar  className="navigation__navbar fixed-top" color="white" expand="md">
+  <Navbar  className="navigation__navbar fixed-top navbar navbar-expand-md bg-white" color="white" expand="md">
     <NavbarBrand>
       <Link className="navbar-brand" to="/"  activeStyle={{ color: "black" }} title="bettinah">
           BETTINAH TIANAH
