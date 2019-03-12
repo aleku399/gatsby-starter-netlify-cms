@@ -5,10 +5,10 @@ const Slide = ({ image }) => {
       backgroundImage: `url(${image.node.childImageSharp.fluid.src})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      // height: '100%',
-      // width: '100%',
-      border: "2px solid blue",
+      backgroundPosition: '50% 20%',
+      // height: ' 400px;',
+      // width: '783px',
+      // border: "2px solid blue",
     }
     return <div className="slide" style={styles}></div>
   }
