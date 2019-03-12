@@ -68,7 +68,7 @@ export class JulyPhotoShootPageTemplate extends React.Component {
           </div>
         </div>
         <div className="col-right col-md-8 col-lg-9">
-          <MDBContainer className="mt-5">
+          <div className="mt-5">
               <div className="mdb-lightbox">
                 <MDBRow>
                   {this.renderImages()}
@@ -101,7 +101,7 @@ export class JulyPhotoShootPageTemplate extends React.Component {
               }
               />
           )}
-          </MDBContainer>
+          </div>
         </div>
       </div>
     )

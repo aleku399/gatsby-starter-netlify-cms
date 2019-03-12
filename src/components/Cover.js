@@ -89,7 +89,7 @@ const CoverWrapper = ({ children, img, title, slug, post }) => (
           <section id="content-section" class="portfolio-single portfolio-single-1">
             <div className="content-wrap thin" >
               <div className="content-wrap">
-                <div className="container full-width">
+                <div className="full-width">
                     {children}
                 </div>
               </div>
