@@ -1,7 +1,7 @@
 // loads bootstrap and base styles.
 // @import "~slick-carousel/slick/slick.css";
 //  @import "~slick-carousel/slick/slick-theme.css";
-@import './scss/gatstrap.scss';
+// @import './scss/gatstrap.scss';
 // @import './scss/colors.scss';
 // @import '@fortawesome/fontawesome-free/css/all.min.css';
 // @import 'bootstrap-css-only/css/bootstrap.min.css';
@@ -17,6 +17,12 @@
 @import "./css/tags.css";
 @import "./css/portfolio.css";
 @import "./css/make.css";
+
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+    }
+}
 
 a {
     cursor: pointer;
@@ -46,14 +52,10 @@ a, a:focus {
     padding: 20px;
     border: 1px dotted rgba(150, 150, 150, 0.18);
 }
-// .side {
-//     width: 100%;
-//     padding: 20px;
-//     border-left: 1px dotted rgba(150, 150, 150, 0.18);
-// }
+
 html, body {
     overflow-x: hidden;
-    // padding-top: 69px;
+    padding-top: 33px;
 }
  .navbar-brand  {
     color:  #333;
@@ -497,6 +499,7 @@ section {
 }
 
 #page-header-section {
+    top: 0;
     position: relative;
     padding: 60px 20px 150px 20px;
     overflow: hidden;
@@ -744,7 +747,7 @@ li {
 }
 
 #page-header-section + #content-section {
-    // margin-top: -80px;
+    margin-top: -64px;
     z-index: 2;
 }
 
