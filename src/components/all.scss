@@ -19,6 +19,133 @@
 @import "./css/make.css";
 @import "./css/nav.css";
 
+.album-single-item:hover .asi-cover{
+    opacity: 1;
+    cursor: pointer;
+}
+// .album-single-item:click .asi-cover{
+//     opacity: 1;
+// }
+
+.album-single-item {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block
+}
+.asi-img {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    vertical-align: middle;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 253px;
+    object-fit:cover; 
+}
+
+.asi-cover {
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+} 
+
+.album-single-item .asi-cover {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.album-single-item .asi-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.album-single-item .asi-info {
+    position: absolute;
+    left: 20px;
+    bottom: 17px;
+    text-align: left;
+    z-index: 2;
+}
+.album-single-item .asi-title {
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.album-single-item .asi-sub-title {
+    margin: 8px 0 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+    color: #888;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    /* transition: all 0.2s ease-in-out; */
+}
+.album-single-item .favorite-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.favorite-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
 @media (min-width: 1200px) {
 .container {
     max-width: 1170px;

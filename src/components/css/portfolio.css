@@ -88,6 +88,7 @@
     display: block;
     bottom: -1px;
     left: -1px;
+    top: 201px;
     right: -1px;
     padding: 5% 7% 4% 7%;
     text-align: center;
@@ -100,16 +101,17 @@
     transition: all 0.2s ease-in-out;
 }
 
-.album-list-item .ali-caption:hover {
+ .ali-caption:hover {
     position: absolute;
     display: block;
-    bottom: -1px;
+    top: 178px;
+    /* bottom: -1px;
     left: -1px;
-    right: -1px;
+    right: -1px; */
     padding: 5% 7% 4% 7%;
     text-align: center;
     z-index: 3;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #FFF; 
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;

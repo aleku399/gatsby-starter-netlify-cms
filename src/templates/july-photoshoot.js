@@ -5,6 +5,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
+import {FaHeart} from 'react-icons/fa';
 
 // import j1 from "../july/jul29.jpg"
 // import j2 from "../july/jul30.jpg"
@@ -35,12 +36,28 @@ export class JulyPhotoShootPageTemplate extends React.Component {
       photoIndex++;
       const privateKey = photoIndex;
     return (
-      <div className="col-md-4" key={photoIndex}>
-        <div className="sugar">
-          <img src={imageSrc.node.childImageSharp.fluid.src} alt="Gallery" onClick={()=>
-          this.setState({ photoIndex: privateKey, isOpen: true })
-          }
+      <div className="col-md-4" key={photoIndex} style={{border: "2px solid transparent"}}>
+        <div style={{width: "253px", height: "191px"}} className="album-single-item">
+          <img
+            src={imageSrc.node.childImageSharp.fluid.src}
+            className="asi-img" alt="Gallery"
+            onClick={ () =>this.setState({ photoIndex: privateKey, isOpen: true })}
           />
+          <div
+            onClick={ () =>this.setState({ photoIndex: privateKey, isOpen: true })}
+            className="asi-cover"
+          >
+            <span className="asi-link lg-trigger">
+              <h4></h4><p></p>
+              <h2 className="asi-title"></h2>
+              <h5 className="asi-sub-title"></h5>
+            </span>
+            <div className="favorite-btn">
+              <span href="#" className="jm-post-like entry-like" title="Like">
+              <i className="fa fa--heart-o icon-unlike"></i>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       );
@@ -162,7 +179,7 @@ export const julyPhotoShootPageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 500, quality: 100) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
