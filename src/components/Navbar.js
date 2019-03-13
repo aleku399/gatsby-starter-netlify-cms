@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import {FaAlignJustify} from 'react-icons/fa'
 
 const Navlayout = class extends React.Component {
   constructor(props) {
@@ -26,10 +27,9 @@ const Navlayout = class extends React.Component {
       </Link>
     </div>
     <div
-      className={`Navbar__Link Navbar__Link-toggle`}
-      data-target="navMenu" 
+      className={`Navbar__Link Navbar__Link-toggle`} 
     >
-       <i className="fas fa-bars"></i>
+      <FaAlignJustify  />
     </div>
     <nav
       id="navMenu"

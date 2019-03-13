@@ -4,7 +4,7 @@ path: /july-photoshoot
 title: JULY PHOTOSHOOT
 description: ABOUT PROJECT
 author:  BETTINAHTIANAH
-image: /img/j4.jpg
+image: /img/jul28.jpg
 ---
 <div class="album-description margin-top-20">
     <div class="al-desc-inner">

@@ -2,23 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Lightbox from "react-image-lightbox";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import "react-image-lightbox/style.css";
 import CoverWrapper from '../components/Cover'
 import Content, { HTMLContent } from '../components/Content'
 
-import j1 from "../july/jul29.jpg"
-import j2 from "../july/jul30.jpg"
-import j3 from "../july/jul31.jpg"
-import j4 from "../july/jul28.jpg"
-import j5 from "../july/jul33.jpg"
-import j7 from "../july/jul27.jpg"
-import j8 from "../july/jul32.jpg"
-import j9 from "../july/jul27.jpg"
-import j10 from "../july/jul20.jpg"
-import j11 from "../july/jul24.jpg"
-import j6 from "../july/jul22.jpg"
+// import j1 from "../july/jul29.jpg"
+// import j2 from "../july/jul30.jpg"
+// import j3 from "../july/jul31.jpg"
+// import j4 from "../july/jul28.jpg"
+// import j5 from "../july/jul33.jpg"
+// import j7 from "../july/jul27.jpg"
+// import j8 from "../july/jul32.jpg"
+// import j9 from "../july/jul27.jpg"
+// import j10 from "../july/jul20.jpg"
+// import j11 from "../july/jul24.jpg"
+// import j6 from "../july/jul22.jpg"
 
-const arrImages =  [j2, j3, j4, j5, j7, j1, j8, j6, j9, j10, j11]
+// const arrImages =  [j2, j3, j4, j5, j7, j1, j8, j6, j9, j10, j11]
 export class JulyPhotoShootPageTemplate extends React.Component {
   constructor(props) {
     super(props)
@@ -35,14 +35,14 @@ export class JulyPhotoShootPageTemplate extends React.Component {
       photoIndex++;
       const privateKey = photoIndex;
     return (
-      <MDBCol md="4" key={photoIndex}>
+      <div className="col-md-4" key={photoIndex}>
         <div className="sugar">
-          <img src={imageSrc} alt="Gallery" onClick={()=>
+          <img src={imageSrc.node.childImageSharp.fluid.src} alt="Gallery" onClick={()=>
           this.setState({ photoIndex: privateKey, isOpen: true })
           }
           />
         </div>
-      </MDBCol>
+      </div>
       );
     })
   }
@@ -69,10 +69,8 @@ export class JulyPhotoShootPageTemplate extends React.Component {
         </div>
         <div className="col-right col-md-8 col-lg-9">
           <div className="mt-5">
-              <div className="mdb-lightbox">
-                <MDBRow>
+              <div className="row">   
                   {this.renderImages()}
-                </MDBRow>
               </div>
             {isOpen && (
               <Lightbox
@@ -84,9 +82,9 @@ export class JulyPhotoShootPageTemplate extends React.Component {
                   color: 'blue'
                 }
               }}
-                mainSrc={this.props.images[photoIndex]}
-                nextSrc={this.props.images[(photoIndex + 1) % this.props.images.length]}
-                prevSrc={this.props.images[(photoIndex + this.props.images.length - 1) % this.props.images.length]}
+                mainSrc={this.props.images[photoIndex].node.childImageSharp.fluid.src}
+                nextSrc={this.props.images[(photoIndex + 1) % this.props.images.length].node.childImageSharp.fluid.src}
+                prevSrc={this.props.images[(photoIndex + this.props.images.length - 1) % this.props.images.length].node.childImageSharp.fluid.src}
                 imageTitle={photoIndex + 1 + "/" + this.props.images.length}
                 onCloseRequest={() => this.setState({ isOpen: false })}
                 onMovePrevRequest={() =>
@@ -117,11 +115,12 @@ JulyPhotoShootPageTemplate.propTypes = {
 
 const  JulyPhotoShootPage = ({ data }) => {
   const { markdownRemark: post } = data
+  const photos = data.photos
   console.log(data)
   return (
-    <CoverWrapper img={j4} title={post.frontmatter.title} post="POST">
+    <CoverWrapper img={post.frontmatter.image} title={post.frontmatter.title} post="POST">
       <JulyPhotoShootPageTemplate
-        images={arrImages}
+        images={photos.edges}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         content={post.html}
@@ -139,7 +138,7 @@ JulyPhotoShootPage.propTypes = {
 export default  JulyPhotoShootPage
 
 export const julyPhotoShootPageQuery = graphql`
-  query  JulyPhotoShootPage($id: String!) {
+  query  JulyPhotoShootPage($id: String!, $absolutePathRegex: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -148,6 +147,22 @@ export const julyPhotoShootPageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    photos: allFile(
+      filter: {
+        absolutePath: { regex: $absolutePathRegex }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
