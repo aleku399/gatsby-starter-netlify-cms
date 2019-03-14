@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 2019 SCHOOL TOUR
-path: /blog/meet-and-greet-for-a-good-cause
+path: /blog/2019-school-tour
 description: 2019 SCHOOL TOUR
 date: 2019-02-3T20:15:10.000Z
 image: /img/s1.jpeg
