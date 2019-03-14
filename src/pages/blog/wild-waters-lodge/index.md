@@ -9,17 +9,14 @@ tags:
   - UNCATEGORIZED
   - POST
 ---
-<!-- <div class='wilder'>
-  <div class='wild1'></div>
-  <div class='wild2'></div>
-  <div class='wild3'></div>
-</div> -->
+
 Wildwaters Lodge ,  located on a private island in
 the middle of the Nile River is everything you want
 for a quiet relaxing get away. The lodge can only be
 accessed by a rowboat.  Me and my team arrived in
 mid-afternoon  and we were warmly welcomed by the
 oarsman.
+
 <div class="w1">
   <p> <img  src="./waters2.jpeg" alt="betty" >
    Our canoe sail was so much  fun and safe
@@ -30,11 +27,13 @@ oarsman.
     to the island told me one is Itanda and the other Kalagala, i walked through the wood decked trails which  lead to the cabins  that are spread along the banks of river Nile.
 </p>
 </div>
+
 <div class="w2">
    <p><img  src="./waters3.jpeg" alt="betty" >
      I was accommodated in a beautiful cabin which has the African feel as it is roof thatched with a wooden timber floor, canvas walled fully furnished, spacious and the bathroom ware which is carved from local pink granite  is a state of the art , this really caught my eye its like nothing have seen before.
   </p>
 </div>
+
 <div class="w1">
     <p><img  src="./waters6.jpg" alt="betty" >
         It has a private deck with an outdoor soaking tub
@@ -48,23 +47,25 @@ oarsman.
         great deal , mouth watering is the term .
     </p>
 </div>
-  <div class="w2">
-    <p><img  src="./waters5.jpg" alt="betty" >
-      The management and staff are genuinely caring and
-      attentive, and nothing is too much trouble.If you
-      really want a fun luxurious adventure that is to say
-      zip lining, bungee jumping , white water rafting and
-      so on then Wildwaters lodge is the place.I really
-      enjoyed my stay though it was for a short while but
-      next time it will be a girls trip, Wild waters lodge
-      see you soon.
-    </p>
-  </div>
-  <div class="mt-5 row">
-    <div class="col-md-6">
+
+<div class="w2">
+  <p><img  src="./waters5.jpg" alt="betty" >
+    The management and staff are genuinely caring and
+    attentive, and nothing is too much trouble.If you
+    really want a fun luxurious adventure that is to say
+    zip lining, bungee jumping , white water rafting and
+    so on then Wildwaters lodge is the place.I really
+    enjoyed my stay though it was for a short while but
+    next time it will be a girls trip, Wild waters lodge
+    see you soon.
+  </p>
+</div>
+
+<div class="mt-5 row">
+  <div class="col-md-6">
     <img  src="./waters4.jpg" alt="betty" >
-    </div>
-    <div class="col-md-4">
-      <img  src="./waters8.jpg" alt="betty" >
-    </div>
   </div>
+  <div class="col-md-4">
+    <img  src="./waters8.jpg" alt="betty" >
+  </div>
+</div>

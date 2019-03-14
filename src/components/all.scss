@@ -32,6 +32,13 @@
 .trial .carousel {
     height:400px;
 }
+
+@media (max-width: 991px) {
+   .trial .carousel {
+        height: 202px;
+      }
+}
+
 // .carousel .slide img {
 //     height: 100%;  /* change this to whatever you want */
 //     width: auto;
@@ -189,9 +196,11 @@ a, a:focus {
 .s {
     width: 700px;
 }
+
 .l {
     padding-left: 5px;
 }
+
 .pag {
     width: 100%;
     padding: 20px;
@@ -204,13 +213,15 @@ html, body {
 }
 
 .gatsby-resp-image-link {
-   width: 244px;
-   padding: 13px;
+    width: 235px;
+    padding: 13px;
 }
+
 .yk {
     display: flex;
     flex-direction: row;
 }
+
 .bg {   
     background-position: center;
     background-repeat: no-repeat;

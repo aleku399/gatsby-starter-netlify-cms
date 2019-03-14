@@ -10,23 +10,6 @@ tags:
   - POST
 ---
 
-<!-- <div class='slider'>
-  <div class='slide1'></div>
-  <div class='slide2'></div>
-  <div class='slide3'></div>
-</div>
-<div class="bli-info">
-  <h2 class="bli-title">
-    <a href="#" title="Meet and greet">MEET AND GREET FOR A GOOD CAUSE</a>
-  </h2>
-  <div class="bli-meta">
-    <i class="fa fa-clock-o"></i>
-    <a href="#" class="article-time">August 27, 2017</a>
-    <i class="fa fa-folder-o"></i>
-    <a href="#">Uncategorized</a>
-  </div>
-</div> -->
-
 On 10th.Nov. 2018 Bettinah Tianah a TV personality, digital marketer, Brand Ambassador is organising her first ever meet and greet.
 
 One of the core goals of the event is to bridge the gap between the youth and the corporate world through speaker sessions.

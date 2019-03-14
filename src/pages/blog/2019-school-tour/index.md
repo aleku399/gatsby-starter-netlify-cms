@@ -10,7 +10,9 @@ tags:
   - EDUCATION
 ---
 Education is learning from experience; it’s a continuous process as every day brings its own kind of learning.
+
 ![school-image](/img/s2.jpeg)
+
 <p>
     I was invited by my online follower Samantha Bantu Olivia via Instagram, a student at Vienna College Namugongo to speak to her classmates about career guidance
 <br>
