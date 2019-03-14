@@ -31,16 +31,13 @@ export default class Landing extends React.Component {
                 <Carousel showThumbs={false} dynamicHeight  infiniteLoop autoPlay>
                     <div>
                         <img src={s8} />
-                        <p className="legend">Legend 1</p>
                     </div>
                     <div>
                         <img src={s7} />
-                        <p className="legend">Legend 2</p>
                     </div>
                     <div>
                         <img src={s10} />
-                        <p className="legend">Legend 3</p>
-                        </div>
+                    </div>
                 </Carousel>
             </div>
         </div> 
