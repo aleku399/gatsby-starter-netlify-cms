@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { Carousel, CarouselItem,CarouselControl,CarouselIndicators,CarouselCaption} from 'reactstrap'
 
 class Slider extends React.Component {
@@ -49,8 +48,8 @@ class Slider extends React.Component {
             onExited={this.onExited}
             key={index}
           >
-            <Img
-              fluid={item.node.childImageSharp.fluid}
+            <img
+              src={item}
               key={index} 
             />
           </CarouselItem>

@@ -51,6 +51,11 @@ const Navlayout = class extends React.Component {
         </Link>
       </div>
       <div className="Navbar__Link">
+        <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar} activeStyle={{ color: "black" }} to="/blog">
+          BLOGS
+        </Link>
+      </div>
+      <div className="Navbar__Link">
         <Link className="nav-link navigation__navlinks"  onClick={this.closeNavbar}  activeStyle={{ color: "black" }} to="/news">
           BETTINAHTIANAH NEWS
         </Link>

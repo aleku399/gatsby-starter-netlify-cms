@@ -1,100 +1,53 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import Layout from '../components/Layout'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import Tags from '../components/Tags'
+// import Slider  from '../components/slider';
 
-export default class IndexPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
-    console.log(data)
-    return (
+import j1 from "../july/jul29.jpg"
+import j2 from "../july/jul30.jpg"
+import j3 from "../july/jul31.jpg"
+import j4 from "../july/jul28.jpg"
+import j5 from "../july/jul33.jpg"
+import j7 from "../july/jul27.jpg"
+import j8 from "../july/jul32.jpg"
+import j9 from "../july/jul27.jpg"
+import j10 from "../july/jul20.jpg"
+import j11 from "../july/jul24.jpg"
+import j6 from "../july/jul22.jpg"
+import s6 from "../../static/img/insta6.jpg"
+import s7 from "../../static/img/insta7.jpg"
+import s8 from "../../static/img/insta8.jpg"
+import s10 from "../../static/img/insta10.jpg"
+
+const arrImages =  [j2, j3, j4, j5, j7, j1, j8, j6, j9, j10, j11]
+
+export default class Landing extends React.Component {
+    render() {
+      return (
     <Layout>
-      <div className="container">
-        <div className="content-wrap">
-          <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          <div className="blog-posts">
-            {posts
-              .filter((post) => post.node.frontmatter.title.length > 0)
-              .map(({ node: post }, index) => {
-            return (
-              <div
-                className={`blog-post-preview ${
-                index % 2 !== 0 ? 'inverse' : ''
-                } row`}
-                key={post.id}
-              >
-              <div className="post-info col-md-4 col-sm-6">
-                <h1 className="title">
-                  <Link to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                </h1>
-              <div className="meta">
-                  <div className="tags">
-                  <Tags list={post.frontmatter.tags} />
-              </div>
-              <h4 className="date">{post.frontmatter.date}</h4>
+        <div className="container"> 
+            <div className="content-wrap">      
+                <Carousel showThumbs={false} dynamicHeight  infiniteLoop autoPlay>
+                    <div>
+                        <img src={s8} />
+                        <p className="legend">Legend 1</p>
+                    </div>
+                    <div>
+                        <img src={s7} />
+                        <p className="legend">Legend 2</p>
+                    </div>
+                    <div>
+                        <img src={s10} />
+                        <p className="legend">Legend 3</p>
+                        </div>
+                </Carousel>
             </div>
-            <p className="excerpt">{post.excerpt}</p>
-            <div>
-              <Link to={post.fields.slug} className="see-more">
-              Keep Reading →
-              </Link>
-            </div>
-          </div>
-         <div className="post-img col-md-4 col-sm-6">
-           <PreviewCompatibleImage imageInfo={post.frontmatter.image} alt="image" />
-         </div>
-       </div>
-      );
-    })}
-    </div>
-    </div>
-   </div>     
-  </Layout>
-    )
-  }
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
-
-export const pageQuery = graphql`
-  query HomeQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 700)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            tags
-            date(formatString: "MMMM DD, YYYY")
-            image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
+        </div> 
+    </Layout>
+      )
     }
   }
-`
+
+ 
+  
