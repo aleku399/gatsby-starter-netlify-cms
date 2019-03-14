@@ -1,37 +1,23 @@
 import React from 'react'
-import Slider from "react-slick";
-import Img from 'gatsby-image'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 class Show extends React.Component {
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      //autoplay: true,
-      //speed: 2000,
-      //autoplaySpeed: 2000,
-      cssEase: "linear"
-    };
-    const slides = this.props.images.map((item, index) => {
-      return (
-        <div
-          key={index}
-        >
-          <Img
-            fluid={{...item.node.childImageSharp.fluid.src}}
-            key={index} 
-          />
-        </div>
-      );
-    });
-
+  
     return (
       <div>
-        <Slider {...settings}>
-          {slides}
-        </Slider>
+        <Carousel  showThumbs={false}  dynamicHeight className="trial">
+          {
+            this.props.images.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.node.childImageSharp.fluid.src}
+                />
+              </div>
+            ))
+          }
+        </Carousel>
       </div>
     );
   }
