@@ -1,8 +1,8 @@
 // loads bootstrap and base styles.
 // @import "~slick-carousel/slick/slick.css";
 //  @import "~slick-carousel/slick/slick-theme.css";
-@import './scss/gatstrap.scss';
-@import './scss/colors.scss';
+// @import './scss/gatstrap.scss';
+// @import './scss/colors.scss';
 // @import '@fortawesome/fontawesome-free/css/all.min.css';
 // @import 'bootstrap-css-only/css/bootstrap.min.css';
 // @import 'mdbreact/dist/css/mdb.css';
@@ -19,29 +19,25 @@
 @import "./css/make.css";
 @import "./css/nav.css";
 
-// .slide {
-//     width: 783px;
-//     height: 400px;
-// }
-
-// @media (min-width: 991px) {
-//     .slide {
+@media screen and (min-width: 992px) {
+    .trial .carousel {
+        width: 783px;
+        height: 400px;
+    }
+  }
+  
+// @media screen and (max-width: 600px) {
+//     .trial .carousel {
+//         width: 291.5px;
 //         height: 202px;
-//       }
-// }
+//     }
+//   }
 
-// .carousel .slide img {
-//     height: 100%;  /* change this to whatever you want */
-//     width: auto;
-// }
 .album-single-item:hover .asi-cover{
     opacity: 1;
     cursor: pointer;
 }
-// .album-single-item:click .asi-cover{
-//     opacity: 1;
-// }
-
+ 
 .album-single-item {
     position: relative;
     height: auto;

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 // import { DiscussionEmbed } from "disqus-react";
-import {FaFolder, FaClock} from 'react-icons/fa';
+import {FaFolder, FaClock} from 'react-icons/fa'
 import BlogWrapper from '../components/Wrapper'
-import Slider from '../components/slider'
+import Show from '../components/slider/Show'
 import PostLink from "../components/Post-link"
 import Content, { HTMLContent } from '../components/Content'
 import ProjectPagination from "../components/ProjectPagination"
@@ -44,7 +44,7 @@ export const BlogPostTemplate = ({
                   <div className="blog-list-items-wrap">
                       <article>
                         <div className="blog-list-item">
-                          <Slider images={photos} />
+                          <Show images={photos} />
                           <div class="bli-info">
                             <h2 class="bli-title">
                               <a href="#" title="Meet and greet">{title}</a>

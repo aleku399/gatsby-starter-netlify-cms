@@ -1,24 +1,50 @@
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask } from
+"mdbreact";
 
 class Show extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {index: 0 };
+  }
+
+  handleSelect(selectedIndex) {
+    this.setState({
+      index: selectedIndex,
+    });
+  }
+
   render() {
-  
+    const { index } = this.state;
+
     return (
-      <div>
-        <Carousel  showThumbs={false}  dynamicHeight className="trial">
+    <div className="trial">
+      <MDBCarousel
+        onSelect={this.handleSelect}
+        activeItem={index}
+        length={this.props.images.length}
+        showControls={true}
+        showIndicators={true}
+        className="z-depth-1"
+      >
+        <MDBCarouselInner>
           {
             this.props.images.map((item, index) => (
-              <div key={index}>
-                <img
-                  src={item.node.childImageSharp.fluid.src}
-                />
-              </div>
+              <MDBCarouselItem itemId={index} key={index}>
+                  <MDBView>
+                    <img
+                      className="d-block w-100"
+                      src={item.node.childImageSharp.fluid.src}
+                    />
+                    <MDBMask overlay="black-light" />
+                  </MDBView>
+              </MDBCarouselItem>
             ))
           }
-        </Carousel>
-      </div>
+        </MDBCarouselInner>
+      </MDBCarousel>
+    </div>
     );
   }
 }

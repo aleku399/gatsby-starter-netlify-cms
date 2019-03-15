@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask} from
 "mdbreact";
 import j1 from "../july/jul29.jpg"
 import j2 from "../july/jul30.jpg"
