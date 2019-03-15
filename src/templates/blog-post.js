@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 // import { DiscussionEmbed } from "disqus-react";
 import {FaFolder, FaClock} from 'react-icons/fa';
 import BlogWrapper from '../components/Wrapper'
-import Show from '../components/slider/Show'
+import Slider from '../components/slider'
 import PostLink from "../components/Post-link"
 import Content, { HTMLContent } from '../components/Content'
 import ProjectPagination from "../components/ProjectPagination"
@@ -44,7 +44,7 @@ export const BlogPostTemplate = ({
                   <div className="blog-list-items-wrap">
                       <article>
                         <div className="blog-list-item">
-                          <Show images={photos} />
+                          <Slider images={photos} />
                           <div class="bli-info">
                             <h2 class="bli-title">
                               <a href="#" title="Meet and greet">{title}</a>
