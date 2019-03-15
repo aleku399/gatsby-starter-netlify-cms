@@ -44,20 +44,20 @@ This trend belittles the significance of the many stunning and monumental places
   </p>
 </div>
 
-<!-- <div class="row ">
+<div class="row ">
   <div class="col-md-4">
-     <img  src="./j53.jpg" alt="Placeholder image" />
+    <img  src="./j53.jpg" alt="Placeholder image" />
   </div>
   <div class="col-md-4">
    <img  src="./j59.jpg" alt="Placeholder image" />
   </div>
-  <div class="col-md-4">
-   <img  src="./j60.jpg" alt="Placeholder image" />
-  </div>
-</div> -->
+</div>
 
 <div class="mt-5 row">
   <div class="col-md-4">
    <img  src="./j63.jpg" alt="Placeholder image" />
+  </div>
+   <div class="col-md-4">
+   <img  src="./j60.jpg" alt="Placeholder image" />
   </div>
 </div>

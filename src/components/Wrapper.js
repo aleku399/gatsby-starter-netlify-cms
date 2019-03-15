@@ -5,6 +5,7 @@ import { StaticQuery, graphql, Link } from "gatsby"
 // import PostLink from './Post-link'
 import Navlayout from '../components/Navbar'
 import Footer from '../components/Footer'
+import 'modern-normalize/modern-normalize.css'
 import './all.scss'
 
 const BlogWrapper = ({ children, img, title, slug, post }) => (
