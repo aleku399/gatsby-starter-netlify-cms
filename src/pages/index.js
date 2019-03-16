@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask} from
-"mdbreact";
+import App from '../components/Carousel'
+
 import j1 from "../july/jul29.jpg"
 import j2 from "../july/jul30.jpg"
 import j3 from "../july/jul31.jpg"
@@ -18,7 +18,7 @@ import s7 from "../../static/img/insta7.jpg"
 import s8 from "../../static/img/insta8.jpg"
 import s10 from "../../static/img/insta10.jpg"
 
-const arrImages =  [j2, j3, j4, j5, j7, j1, j8, j6, j9, j10, j11,s7, s8, s10]
+const arrImages =  [j2, j3, j4, j5, j7, s6, s7,s8]
 
 export default class Landing extends React.Component {
     render() {
@@ -26,40 +26,10 @@ export default class Landing extends React.Component {
     <Layout>
         <div className="container"> 
             <div className="content-wrap"> 
-                <MDBCarousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
-                    <MDBCarouselInner>
-                        <MDBCarouselItem itemId="1">
-                            <MDBView>
-                                <img className="d-block w-100" src={s7} alt="First slide" />
-                                <MDBMask overlay="black-light" />
-                            </MDBView>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="2">
-                            <MDBView>
-                                <img className="d-block w-100" src={s8} alt="Second slide" />
-                                <MDBMask overlay="black-strong" />
-                            </MDBView>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="3">
-                            <MDBView>
-                                <img className="d-block w-100" src={s10} alt="Third slide" />
-                                <MDBMask overlay="black-slight" />
-                            </MDBView>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="4">
-                            <MDBView>
-                                <img className="d-block w-100" src={j7} alt="Mattonit's item" />
-                                <MDBMask overlay="black-light" />
-                            </MDBView>
-                        </MDBCarouselItem>
-                    </MDBCarouselInner>
-                </MDBCarousel>
+               <App images={arrImages} />
             </div>
         </div> 
     </Layout>
       )
     }
   }
-
- 
-  

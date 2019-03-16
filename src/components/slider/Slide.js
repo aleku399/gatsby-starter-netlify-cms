@@ -2,7 +2,10 @@ import React from 'react';
 
 const Slide = ({ image }) => {
     const styles = {
-      backgroundImage: `url(${image.node.childImageSharp.fluid.src})`,
+      backgroundImage: `url(${!!image.node
+        ? image.node.childImageSharp.fluid.src
+        : image
+      })`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 20%',

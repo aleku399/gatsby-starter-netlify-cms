@@ -1,146 +1,16 @@
-// loads bootstrap and base styles.
-// @import "~slick-carousel/slick/slick.css";
-//  @import "~slick-carousel/slick/slick-theme.css";
-// @import './scss/gatstrap.scss';
-// @import './scss/colors.scss';
-// @import '@fortawesome/fontawesome-free/css/all.min.css';
-// @import 'bootstrap-css-only/css/bootstrap.min.css';
-// @import 'mdbreact/dist/css/mdb.css';
 @import "./css/line.css";
 @import "./css/gallery.scss";
 // @import "./css/comments.scss";
 @import "./css/tabs.css";
 @import "./css/blog.css";
 @import "./css/light.scss";
-// @import "./css/slider.scss";
+@import "./css/slider.scss";
 @import "./css/path.css";
 @import "./css/tags.css";
 @import "./css/portfolio.css";
 @import "./css/make.css";
 @import "./css/nav.css";
-
-.j1 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .j1 a {
-   float: left;
-   margin-right: 15px;
-  }
-  .j2 {
-   clear: both;  
-   margin-right: 20px;
-  }
-  .j2 a {
-   float: right;
-   margin-left: 10px;
-  }
-  .j3 a {
-      padding-top: 10px;
-  }
-  
-  .r1 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .r1 a {
-    float: left;
-    margin-right: 15px;
-  }
-  .r2 {
-    clear: both;  
-    margin-right: 20px;
-   }
-   .r2 a {
-    float: right;
-    margin-left: 10px;
-   }
-   .r3 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .r3 a {
-    float: right;
-    margin-left: 10px;
-  }
-  .r4 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .r4 a {
-    float: left;
-    margin-right: 15px;
-  }
-  .w1 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .w1 a {
-   float: right;
-   margin-left: 15px;
-  }
-  .w2 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .w2 a {
-   float: left;
-   margin-right: 15px;
-  }
-  .w3 a {
-    float: right;
-    margin-left: 10px;
-   }
-   .w3 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .p1 {
-    margin-right: 20px;
-    clear: both;
-  }
-  .p1 a {
-   float: left;
-   margin-right: 15px;
-  }
-  .p2 {
-    clear: both;  
-    margin-right: 20px;
-   }
-   .p2 a {
-    float: right;
-    margin-left: 10px;
-   }
-  .p3 {
-    margin-bottom: 20px;
-    clear: both;  
-  }
-  .p3 a {
-   float: left;
-   margin-right: 15px;
-  }
-  .p4 {
-    margin-right: 20px;
-    clear: both;  
-  }
-  .p4 a {
-   float: right;
-   margin-left: 10px;
-  }
-
-@media screen and (min-width: 992px) {
-    .trial .carousel {
-        width: 783px;
-        height: 400px;
-    }
-  }
-  
-// @media screen and (max-width: 600px) {
-//     .trial .carousel {
-//         width: 291.5px;
-//         height: 202px;
-//     }
-//   }
+@import "./css//custom.css";
 
 .album-single-item:hover .asi-cover{
     opacity: 1;
