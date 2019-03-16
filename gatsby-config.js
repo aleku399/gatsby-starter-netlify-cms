@@ -70,7 +70,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 350,
-              maxHeight: 200,
+              maxHeight: 440,
               quality: 100,
             },
           },
