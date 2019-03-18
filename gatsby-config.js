@@ -74,12 +74,12 @@ module.exports = {
               quality: 100,
             },
           },
-          // {
-          //   resolve: `gatsby-plugin-typography`,
-          //   options: {
-          //     pathToConfigModule: `src/utils/typography.js`,
-          //   },
-          // },
+          {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+              pathToConfigModule: `src/utils/typography.js`,
+            },
+          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
