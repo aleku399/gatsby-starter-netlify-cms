@@ -1,19 +1,18 @@
 import Typography from "typography"
+// import funstonTheme from 'typography-theme-funston'
 
 const typography = new Typography({
-    // baseFontSize: "13px",
-    // headerFontFamily: [
-    //     "Avenir Next",
-    //     "Helvetica Neue",
-    //     "Segoe UI",
-    //     "Helvetica",
-    //     "Arial",
-    //     "sans-serif",
-    //   ],
-    bodyFontFamily: ["Georgia", "serif"],
-    // baseLineHeight: "24px",
-    // bodyWeight: "300",
-    // letterSpacing: "3px",
+    baseFontSize: "13px",
+    bodyFontFamily: [
+        "Roboto Mono",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+        "serif"
+    ],
+    baseLineHeight: "24px",
+    bodyWeight: "300",
+    letterSpacing: "1px",
 })
 
 export default typography

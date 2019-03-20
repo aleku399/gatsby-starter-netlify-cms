@@ -20,8 +20,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent, img, headi
               <div className="wpb_wrapper">
                 <div className="wbp_text_column wbp_content_element">
                   <div className="wbp_wrapper">
-                    <h3>{title}</h3>
-                    <h6>{heading}</h6>
+                    <h3 style={{marginTop: "0px", marginBottom: "20px", fontSize: "24px"}}>{title}</h3>
+                    <h6 style={{marginTop: "10px", marginBottom: "20px"}}>{heading}</h6>
                     <PageContent className="content" content={content} />
                   </div>
                 </div>
