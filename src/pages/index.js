@@ -13,12 +13,8 @@ import j9 from "../july/jul27.jpg"
 import j10 from "../july/jul20.jpg"
 import j11 from "../july/jul24.jpg"
 import j6 from "../july/jul22.jpg"
-import s6 from "../../static/img/insta6.jpg"
-import s7 from "../../static/img/insta7.jpg"
-import s8 from "../../static/img/insta8.jpg"
-import s10 from "../../static/img/insta10.jpg"
 
-const arrImages =  [j2, j3, j4, j5, j7, s6, s7,s8]
+const arrImages =  [j2, j3, j4, j5, j7]
 
 export default class Landing extends React.Component {
     render() {
