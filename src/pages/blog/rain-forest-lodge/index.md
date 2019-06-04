@@ -58,7 +58,7 @@ If you are looking for a nearby paradise look no further than the Rain Forest Lo
   </div>
 </div>
 
-<div class="row ex">
+<div class="mt-5 row">
   <div class="col">
     <img  src="./rain21.jpg" alt="betty">
   </div>
