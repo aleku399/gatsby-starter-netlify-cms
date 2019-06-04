@@ -17,19 +17,12 @@ accessed by a rowboat.  Me and my team arrived in
 mid-afternoon  and we were warmly welcomed by the
 oarsman.
 
-<div class="row">
-  <div class="col-md-2">
-  <img  src="./waters9.jpeg" alt="betty" >
-  </div>
-  <div class="col-md-10">
-   Our canoe sail was so much  fun and safe
-    since a lifejacket was a must , i gazed at the thick
-    riverine forest which covers the private island.
-    Once on the island i was  greeted with the customary
-    juice, i could not help it but stare at the rapid waterfalls , Marc Myers my contact
-    to the island told me one is Itanda and the other Kalagala, i walked through the wood decked trails which  lead to the cabins  that are spread along the banks of river Nile.
-</div>
-</div>
+Our canoe sail was so much  fun and safe
+since a lifejacket was a must , i gazed at the thick
+riverine forest which covers the private island.
+Once on the island i was  greeted with the customary
+juice, i could not help it but stare at the rapid waterfalls , Marc Myers my contact
+to the island told me one is Itanda and the other Kalagala, i walked through the wood decked trails which  lead to the cabins  that are spread along the banks of river Nile.
 
 <div class="row">
    <div class="col-md-8">
