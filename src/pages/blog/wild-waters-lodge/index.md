@@ -19,7 +19,7 @@ oarsman.
 
 <div class="row">
   <div class="col-md-2">
-  <img  src="./waters2.jpeg" alt="betty" >
+  <img  src="./waters9.jpeg" alt="betty" >
   </div>
   <div class="col-md-10">
    Our canoe sail was so much  fun and safe
