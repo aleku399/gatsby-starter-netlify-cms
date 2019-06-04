@@ -45,6 +45,9 @@ If you are looking for a nearby paradise look no further than the Rain Forest Lo
 </div>
 
 <div class="row">
+ <div class="col-md-4">
+     <img  src="./rain26.jpg" alt="betty">
+  </div>
 <div class="col-md-8">
   <p>
     I loved that it was so easy to locate the lodge , very friendly staff everyone was kind and calm , great  food , and so cosy , it would be a good idea to even just call in and arrange a private lunch for your   loved one , how romantic , somewhere out of town so serene  and beautiful surrounded by true nature .
@@ -52,9 +55,6 @@ If you are looking for a nearby paradise look no further than the Rain Forest Lo
   <p>
     At $250 for residents and $330 for non residents you can get a full board package . For only one night  for two guests Check out for more offers and information by calling <strong>+256754067015</strong>
   </p>
-  </div>
-  <div class="col-md-4">
-     <img  src="./rain26.jpg" alt="betty">
   </div>
 </div>
 
