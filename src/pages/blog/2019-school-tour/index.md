@@ -19,7 +19,7 @@ Education is learning from experience; it’s a continuous process as every day 
     I enjoyed the interactions as many of them were interested in fashion and TV career paths.
 </p>
 <p>
-    Starting the month of February, I am taking it upon my self to reach out to more school going pupils and students with support from my friend Anna Muscetta a doctor and the wife of the Italian Ambassador to Uganda.
+    I am taking it upon my self to reach out to more school going pupils and students with support from my friend Anna Muscetta a doctor and the wife of the Italian Ambassador to Uganda.
 </p>
 <p>
     PS. I encourage other media personalities to join this movement since they are looked at as role models by teenagers. contact bettinahtianah19@gmail.com
@@ -56,9 +56,7 @@ Education is learning from experience; it’s a continuous process as every day 
     <strong>Duration</strong>
 </p>
 <p style="text-align:left">
-    Feb to October
-    <br>
-    1hr of speaking 
+    1hr of speaking
     <br>
     45 minutes of Q&A
 </p>
