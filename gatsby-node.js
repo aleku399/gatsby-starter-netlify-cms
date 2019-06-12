@@ -5,6 +5,7 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage,  createRedirect } = actions
+  createRedirect({ fromPath: 'https://bettinahtianah.com/about-me/*', toPath: 'https://bettinahtianah.com/about', isPermanent: true, force: true })
   createRedirect({ fromPath: 'https://bettinahtianah.com/2019-school-tour/*', toPath: 'https://bettinahtianah.com/blog/2019-school-tour/', isPermanent: true, force: true })
   createRedirect({ fromPath: 'https://bettinahtianah.com/meet-and-greet-for-a-good-cause/*', toPath: 'https://bettinahtianah.com/blog/meet-and-greet-for-a-good-cause/', isPermanent: true, force: true })
   createRedirect({ fromPath: 'https://bettinahtianah.com/trophy-tour/*', toPath: 'https://bettinahtianah.com/blog/trophy-tour/', isPermanent: true, force: true })

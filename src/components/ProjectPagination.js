@@ -10,7 +10,7 @@ const ProjectPagination = ({ next, prev }) => (
       <div className="col-sm-6">
         <Link to={prev.fields.slug}>
             <div className="pag"  style={{display: "flex", flexDirection: "row"}}>
-              <img  className="round" src={prev.frontmatter.image.childImageSharp.fluid.src}  />
+              <img  className="round" src={prev.frontmatter.image.childImageSharp.fluid.src} alt="footer-image" />
               <div style={{display: "flex", flexDirection: "column", color: "#333", margin: "10px"}}>
                 <span className="linktitle"><FaArrowCircleLeft/><span className="l"></span>PREV</span>
                 {prev.frontmatter.title}
@@ -28,7 +28,7 @@ const ProjectPagination = ({ next, prev }) => (
                 <span className="linktitle">NEXT<span className="l"></span><FaArrowCircleRight/></span>
                 {next.frontmatter.title}
               </div>
-              <img  className="round" src={next.frontmatter.image.childImageSharp.fluid.src}  /> 
+              <img  className="round" src={next.frontmatter.image.childImageSharp.fluid.src}  alt="footer-image" /> 
           </div>
         </Link>
       </div>

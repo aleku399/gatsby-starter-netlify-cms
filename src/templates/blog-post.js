@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-// import { DiscussionEmbed } from "disqus-react";
+import { DiscussionEmbed } from "disqus-react";
 import {FaFolder, FaClock} from 'react-icons/fa'
 import BlogWrapper from '../components/Wrapper'
 import Carousel from '../components/slider/Carousel'
@@ -26,11 +26,11 @@ export const BlogPostTemplate = ({
   prev,
 }) => {
   const PostContent = contentComponent || Content
-  // const disqusShortname = " http-localhost-8000-XKdULE3kTi.disqus.com"
-  // const disqusConfig = {
-  //   identifier: id,
-  //   title: title,
-  // }
+  const disqusShortname = "https-bettinahtianah-com.disqus.com"
+  const disqusConfig = {
+    identifier: id,
+    title
+  }
 
   return (
     <div>
@@ -71,81 +71,7 @@ export const BlogPostTemplate = ({
                           </small>
                       </div>
                     </div>
-                    <div id="respond" className="comment-respond">
-                      <h3 id="reply-title" className="comment-reply-title">
-                        Leave a reply
-                        <small>
-                          <a href="#" style={{display: "none"}}>Cancel reply</a>
-                        </small>
-                      </h3>
-                      <form id="commentform" className="comment-form">
-                          <div id="comment-status"></div>
-                          <p className="comment-notes">
-                            <span id="email-notes">
-                              Your email address will not be published.
-                            </span>
-                            <span className="required">*</span>
-                          </p>
-                          <p className="comment-form-comment">
-                            <label for="comment">Comment</label>
-                            <textarea
-                              className="form-control"
-                              placeholder="COMMENT"
-                              id="comment"
-                              name="comment"
-                              cols="45"
-                              rows="8"
-                              maxlength="65525"
-                              >
-                            </textarea>
-                          </p>
-                          <p className="comment-form-author">
-                            <label for="author">
-                              Name
-                              <span className="required">*</span>
-                            </label>
-                            <input
-                              className="form-control"
-                              placeholder="Name"
-                              id="author"
-                              type="text"
-                              value size="30"
-                              maxlength="245"
-                              required="required"
-                            />
-                          </p>
-                          <p className="comment-form-email">
-                            <label for="email">
-                              Email
-                              <span className="required">*</span>
-                            </label>
-                            <input
-                              className="form-control"
-                              placeholder="Email"
-                              id="email"
-                              type="text"
-                              value size="30"
-                              maxlength="100"
-                              required="required"
-                            />
-                          </p>
-                          <p className="comment-form-url">
-                            <label for="url">Website</label>
-                            <input
-                              className="form-control"
-                              placeholder="WEBSITE"
-                              id="url"
-                              name="url"
-                              type="text"
-                              value size="30"
-                              maxlength="200"
-                            />
-                          </p>
-                          <p className="form-submit">
-                            <input name="submit" type="submit" class="submit" value="Post Comment" />
-                          </p>
-                        </form>
-                    </div>
+                    <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                   </div>
                 </div>
                 <div className="col-md-4 side">
