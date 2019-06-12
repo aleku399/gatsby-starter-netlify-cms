@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Blog-Bettinah Tianah',
-    description: 'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    description: 'The face of everything young, fresh and modern in Uganda. I started out in the Ugandan entertainment at the age of 15 as the host of “Youth Voice” followed by popular television shows “Be My Date” and “About Town”, I also became a respected actor after landing the lead role as Rhona in the Hostel serenity season 4 that aired on  Uganda’s NTV',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
