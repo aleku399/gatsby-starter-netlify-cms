@@ -1,14 +1,16 @@
 ---
 templateKey: blog-post
-title: THE BT FOUNDATION SHCOOL DRIVE Every Body Can
+title: THE BT FOUNDATION </br>
 path: /blog/2019-school-tour
 description: 2019 SCHOOL TOUR
-date: 2019-02-3T20:15:10.000Z
+date: 2019-07-26T20:15:10.000Z
 image: /img/s1.jpeg
 tags:
   - EDUCATION
   - EDUCATION
 ---
+<h3>SHCOOL DRIVE..<br>EveryBody Can<br></h3>
+
 Dr. Ben Carson, a renowned Neurosurgeon, once said, ‘Education is Liberation.’ His statement couldn’t be truer. I also believe that education is learning from experience and a continuous process, as every day brings its own form of learning. The Bettinah Tianah Foundation was created with one goal in mind: To make a change.
 
 ![school-image](/img/s2.jpeg)
