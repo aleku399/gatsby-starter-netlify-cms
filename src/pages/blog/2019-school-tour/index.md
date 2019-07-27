@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: THE BT FOUNDATION </br>
+title: THE BT FOUNDATION
 path: /blog/2019-school-tour
 description: 2019 SCHOOL TOUR
 date: 2019-07-26T20:15:10.000Z
