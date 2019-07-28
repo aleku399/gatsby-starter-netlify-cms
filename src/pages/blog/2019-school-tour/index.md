@@ -9,7 +9,7 @@ tags:
   - EDUCATION
   - EDUCATION
 ---
-<h3>SHCOOL DRIVE..<br>EveryBody Can<br></h3>
+<h3>SHCOOL DRIVE<br>EveryBody Can<br></h3>
 
 Dr. Ben Carson, a renowned Neurosurgeon, once said, ‘Education is Liberation.’ His statement couldn’t be truer. I also believe that education is learning from experience and a continuous process, as every day brings its own form of learning. The Bettinah Tianah Foundation was created with one goal in mind: To make a change.
 

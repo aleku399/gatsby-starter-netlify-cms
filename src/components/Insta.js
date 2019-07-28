@@ -18,48 +18,48 @@ export default class Insta extends React.Component {
     return (
     <ul>
         <li>
-            <a href="#">
-                <img src={s7} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s7} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s8} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s8} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s10} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s10} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s1} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s1} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s2} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s2} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s3} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s3} alt="instagram_pics"/>
             </a>
         </li>    
         <li>
-            <a href="#">
-                <img src={s4} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s4} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s5} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s5} alt="instagram_pics"/>
             </a>
         </li>
         <li>
-            <a href="#">
-                <img src={s6} alt="betty"/>
+            <a href="https://www.instagram.com/bettinahtianah"  target="_blank">
+                <img src={s6} alt="instagram_pics"/>
             </a>
         </li>
     </ul>

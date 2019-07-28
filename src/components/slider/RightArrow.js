@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaArrowCircleRight, FaArrowCircleLeft} from 'react-icons/fa'
+import {FaArrowCircleRight } from 'react-icons/fa'
 
 const RightArrow = (props) => {
   return (

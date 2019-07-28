@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import CoverWrapper from '../components/Cover'
-import Content, { HTMLContent } from '../components/Content'
 import Portfolio from '../components/portfolio'
 // import TabsPage from '../components/portfolio/Try'
 import betty from "../../static/img/about2.jpeg"

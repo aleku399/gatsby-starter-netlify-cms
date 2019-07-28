@@ -3,9 +3,6 @@ import Link from "gatsby-link";
 import {FaAlignJustify} from 'react-icons/fa'
 
 const Navlayout = class extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount(){
     function classToggle() {

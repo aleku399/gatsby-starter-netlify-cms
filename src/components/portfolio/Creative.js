@@ -15,7 +15,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="/portfolio/july-photoshoot">
                     <div className="ali-img-wrap">
-                        <img  src={j1} alt="Placeholder image" />
+                        <img  src={j1} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">JULY PHOTOSHOOT</h2>
@@ -28,7 +28,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="portfolio/glamour/">
                     <div className="ali-img-wrap">
-                        <img  src={g2} alt="Placeholder image" />
+                        <img  src={g2} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">GLAMOUR</h2>
@@ -41,7 +41,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="/portfolio/glamour-1">
                     <div className="ali-img-wrap">
-                        <img  src={g3} alt="Placeholder image" />
+                        <img  src={g3} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">GLAMOUR</h2>
@@ -56,7 +56,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="/portfolio/glamour-2">
                     <div className="ali-img-wrap">
-                        <img  src={g4} alt="Placeholder image" />
+                        <img  src={g4} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">GLAMOUR</h2>
@@ -69,7 +69,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="portfolio/glamour-3">
                     <div className="ali-img-wrap">
-                        <img  src={g5} alt="Placeholder image" />
+                        <img  src={g5} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">GLAMOUR</h2>
@@ -82,7 +82,7 @@ const Creative =  () => (
             <div className="album-list-item">
                 <Link className="ali-link" to="portfolio/all-that-glitters-1">
                     <div className="ali-img-wrap">
-                        <img  src={g1} alt="Placeholder image" />
+                        <img  src={g1} alt="creative_image" />
                     </div>
                     <div className="ali-caption">
                         <h2 className="ali-title">ALL THAT GLITTERS</h2>
