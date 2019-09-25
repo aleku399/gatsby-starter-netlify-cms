@@ -26,6 +26,7 @@ const Layout = ({ children }) => (
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
+	  <meta name="google-site-verification" content="wZNcA9uJEvsi9sfoW-KOsuVXHg1F9aP5KMdEJPjc4QA" />
           <meta name="description" content={data.site.siteMetadata.description} />
 
           {/* <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
