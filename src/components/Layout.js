@@ -26,6 +26,14 @@ const Layout = ({ children }) => (
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92854724-1"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'UA-92854724-1');
+	  </script>
 	  <meta name="google-site-verification" content="wZNcA9uJEvsi9sfoW-KOsuVXHg1F9aP5KMdEJPjc4QA" />
           <meta name="description" content={data.site.siteMetadata.description} />
 
