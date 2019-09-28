@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://bettinahtianah.com/`,
     title: 'Blog-Bettinah Tianah',
     description: 'The face of everything young, fresh and modern in Uganda. I started out in the Ugandan entertainment at the age of 15 as the host of “Youth Voice” followed by popular television shows “Be My Date” and “About Town”, I also became a respected actor after landing the lead role as Rhona in the Hostel serenity season 4 that aired on  Uganda’s NTV',
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
