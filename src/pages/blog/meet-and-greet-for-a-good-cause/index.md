@@ -21,7 +21,7 @@ In between various activity segments, Bettinah will take time to connect with he
 The event will also double as a charity fundraiser for girls in Bulamagi Sub-county Iganga District.
 The fundraiser is in collaboration with the Smart Girls Foundation. An NGO charity focussed on girl child empowerment and mentorship.
 
-On December 1st – 2nd 2018 with support from NRM chairman Eastern region Capt. Mike Mukula, together with representatives from the US embassy Uganda and UN Women Uganda.
+On December 1st – 2nd 2018 with support from NRM chairman Eastern region Capt. Mike Mukula, together with representatives from the US embassy Uganda.
 Bettinah and Jamillah Mayanja of Smart Girls Foundation will head to Bulamagi for an outreach, giving back to the community. The focus will be empowering the girl child.
 
 For those who would like to contribute to this noble cause, please use 0778349029. Thank you for your kind hearts
